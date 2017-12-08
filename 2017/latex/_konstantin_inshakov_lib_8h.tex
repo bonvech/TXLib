@@ -1,0 +1,215 @@
+\hypertarget{_konstantin_inshakov_lib_8h}{}\section{Файл Konstantin\+Inshakov\+Lib.\+h}
+\label{_konstantin_inshakov_lib_8h}\index{Konstantin\+Inshakov\+Lib.\+h@{Konstantin\+Inshakov\+Lib.\+h}}
+
+
+Библиотека Константина Иншакова  
+
+
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_konstantin_inshakov_lib_8h_a214f53877f3da3390e7b3cae522747e8}{draw\+Sun} (int x, int y, double scale, C\+O\+L\+O\+R\+R\+EF color, double lenght, int radius, int lines, int spin, int on)
+\begin{DoxyCompactList}\small\item\em Рисует солнце \end{DoxyCompactList}\item 
+void \hyperlink{_konstantin_inshakov_lib_8h_a9bc08ca9e0b65eacd744e10d90d65c3c}{draw\+Human} (int x, int y, double scale, C\+O\+L\+O\+R\+R\+EF color, int z, int angle, int eyes\+\_\+closed, int angle\+\_\+legs, int eyes\+\_\+move, int angle2)
+\begin{DoxyCompactList}\small\item\em Рисует человека \end{DoxyCompactList}\item 
+void \hyperlink{_konstantin_inshakov_lib_8h_abeb16ad752a77e9023fb623f5d52f541}{draw\+Tree1} (int x, int y, double scale, C\+O\+L\+O\+R\+R\+EF color, int radius, int width, int z, int branch1\+\_\+exist, int branch2\+\_\+exist)
+\begin{DoxyCompactList}\small\item\em Рисует дерево \end{DoxyCompactList}\item 
+void \hyperlink{_konstantin_inshakov_lib_8h_af807218f7debecfecc76f1088d87c8e1}{draw\+House} (int x, int y, double scale, C\+O\+L\+O\+R\+R\+EF color1, C\+O\+L\+O\+R\+R\+EF color2, C\+O\+L\+O\+R\+R\+EF color3, int width, int height, int light\+\_\+on, int door\+\_\+open, int high2)
+\begin{DoxyCompactList}\small\item\em Рисует дом \end{DoxyCompactList}\item 
+void \hyperlink{_konstantin_inshakov_lib_8h_a7d836fd07b05caa1bc10006d4b21d46b}{draw\+Tree2} (int x, int y, double scale, C\+O\+L\+O\+R\+R\+EF color1, C\+O\+L\+O\+R\+R\+EF color2, int high, int width, int z, int width2, int width3)
+\begin{DoxyCompactList}\small\item\em Рисует ель \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Библиотека Константина Иншакова 
+
+\begin{DoxyWarning}{Предупреждения}
+Данная библиотека работает только вместе с библиотекой T\+X\+Lib 
+\end{DoxyWarning}
+
+
+\subsection{Функции}
+\hypertarget{_konstantin_inshakov_lib_8h_af807218f7debecfecc76f1088d87c8e1}{}\label{_konstantin_inshakov_lib_8h_af807218f7debecfecc76f1088d87c8e1} 
+\index{Konstantin\+Inshakov\+Lib.\+h@{Konstantin\+Inshakov\+Lib.\+h}!draw\+House@{draw\+House}}
+\index{draw\+House@{draw\+House}!Konstantin\+Inshakov\+Lib.\+h@{Konstantin\+Inshakov\+Lib.\+h}}
+\subsubsection{\texorpdfstring{draw\+House()}{drawHouse()}}
+{\footnotesize\ttfamily void draw\+House (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{scale,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color1,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color2,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color3,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{light\+\_\+on,  }\item[{int}]{door\+\_\+open,  }\item[{int}]{high2 }\end{DoxyParamCaption})}
+
+
+
+Рисует дом 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & положение по оси X верхней точки крыши \\
+\hline
+{\em y} & положение по оси Y верхней точки крыши \\
+\hline
+{\em scale} & коэффицент размера (при значении равном 1 ширина равна 300 высота 400) \\
+\hline
+{\em color1} & отвечает за цвет крыши \\
+\hline
+{\em color2} & отвечает за цвет стен \\
+\hline
+{\em color3} & отвечает за цвет двери \\
+\hline
+{\em width} & прибавка к ширине(перемещает правый край направо на заданное число пикселей) \\
+\hline
+{\em height} & прибавка к высоте крыши(перемещает верхнюю точку вверх на заданное число пикселей) \\
+\hline
+{\em light\+\_\+on} & параметр цвета окна(если равен 0, окно чёрное. Иначе жёлтое) \\
+\hline
+{\em door\+\_\+open} & параметр открытия и закрытия двери(Если равен 0, дверь закрыта.\+Иначе открыта.) \\
+\hline
+{\em high2} & отвечает за высоту всего дома(нижний край остаётся на месте.\+Остальные точки перемещаются вверх на заданное число пикселей)\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+\hyperlink{_alex_lib_8h_a1e039a72fb6d88b7e51643a5e4aea160}{drawHouse}(100,700,1,TX\_RED,TX\_BLACK,TX\_RED,0,0,1,0,0)
+\end{DoxyCode}
+ \hypertarget{_konstantin_inshakov_lib_8h_a9bc08ca9e0b65eacd744e10d90d65c3c}{}\label{_konstantin_inshakov_lib_8h_a9bc08ca9e0b65eacd744e10d90d65c3c} 
+\index{Konstantin\+Inshakov\+Lib.\+h@{Konstantin\+Inshakov\+Lib.\+h}!draw\+Human@{draw\+Human}}
+\index{draw\+Human@{draw\+Human}!Konstantin\+Inshakov\+Lib.\+h@{Konstantin\+Inshakov\+Lib.\+h}}
+\subsubsection{\texorpdfstring{draw\+Human()}{drawHuman()}}
+{\footnotesize\ttfamily void draw\+Human (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{scale,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color,  }\item[{int}]{z,  }\item[{int}]{angle,  }\item[{int}]{eyes\+\_\+closed,  }\item[{int}]{angle\+\_\+legs,  }\item[{int}]{eyes\+\_\+move,  }\item[{int}]{angle2 }\end{DoxyParamCaption})}
+
+
+
+Рисует человека 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & положение по оси X основания ног \\
+\hline
+{\em y} & положение по оси Y основания ног \\
+\hline
+{\em scale} & коэффицент размера(при значении равном 1 высота равна 250 пикселей, ширина 100) \\
+\hline
+{\em color} & отвечает за цвет(всего объекта) \\
+\hline
+{\em z} & смещение центра рта(при значении равном 140 рот является одним отрезком) \\
+\hline
+{\em angle} & перемещение левой руки по вертикали(при слишком большом значении ломает рисунок) \\
+\hline
+{\em eyes\+\_\+closed} & отвечает за закрытие глаз(при значении больше 0 глаза закрыты) \\
+\hline
+{\em angle\+\_\+legs} & перемещение ног по горизонтали(при слишком большом значении ломает рисунок) \\
+\hline
+{\em eyes\+\_\+move} & перемещение глаз по оси X(при слишком большом значении ломает рисунок) \\
+\hline
+{\em angle2} & перемещение правой руки по вертикали(при слишком большом значении ломает рисунок)\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+\hyperlink{_konstantin_inshakov_lib_8h_a9bc08ca9e0b65eacd744e10d90d65c3c}{drawHuman}(500,500,1,TX\_BLACK,140,0,0,0,0,0)
+\end{DoxyCode}
+ \hypertarget{_konstantin_inshakov_lib_8h_a214f53877f3da3390e7b3cae522747e8}{}\label{_konstantin_inshakov_lib_8h_a214f53877f3da3390e7b3cae522747e8} 
+\index{Konstantin\+Inshakov\+Lib.\+h@{Konstantin\+Inshakov\+Lib.\+h}!draw\+Sun@{draw\+Sun}}
+\index{draw\+Sun@{draw\+Sun}!Konstantin\+Inshakov\+Lib.\+h@{Konstantin\+Inshakov\+Lib.\+h}}
+\subsubsection{\texorpdfstring{draw\+Sun()}{drawSun()}}
+{\footnotesize\ttfamily void draw\+Sun (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{scale,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color,  }\item[{double}]{lenght,  }\item[{int}]{radius,  }\item[{int}]{lines,  }\item[{int}]{spin,  }\item[{int}]{on }\end{DoxyParamCaption})}
+
+
+
+Рисует солнце 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & положение по оси X центра солнца \\
+\hline
+{\em y} & положение по оси Y центра солнца \\
+\hline
+{\em scale} & коэффицент размера(при значении равном 1 радиус и длина лучей равны 100 пикселей) \\
+\hline
+{\em color} & отвечает за цвет(всего объекта) \\
+\hline
+{\em lenght} & коэффицент длины лучей(при значении равном 1,длина лучей 100 пикселей) \\
+\hline
+{\em radius} & прибавка к радиусу \\
+\hline
+{\em lines} & отвечает за существование или отсутствие лучей (если равно 0 лучи исчезают) \\
+\hline
+{\em spin} & вращает солнце по кругу (работает не совсем так как надо) \\
+\hline
+{\em on} & отвечает за существование объекта (если равно 0 объект исчезает)\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+\hyperlink{_alex_lib_8h_a866ae2de2bd9eaae72157ea4c38c2803}{drawSun}(100,100,1,TX\_YELLOW,1,0,1,0,1)
+\end{DoxyCode}
+ \hypertarget{_konstantin_inshakov_lib_8h_abeb16ad752a77e9023fb623f5d52f541}{}\label{_konstantin_inshakov_lib_8h_abeb16ad752a77e9023fb623f5d52f541} 
+\index{Konstantin\+Inshakov\+Lib.\+h@{Konstantin\+Inshakov\+Lib.\+h}!draw\+Tree1@{draw\+Tree1}}
+\index{draw\+Tree1@{draw\+Tree1}!Konstantin\+Inshakov\+Lib.\+h@{Konstantin\+Inshakov\+Lib.\+h}}
+\subsubsection{\texorpdfstring{draw\+Tree1()}{drawTree1()}}
+{\footnotesize\ttfamily void draw\+Tree1 (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{scale,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color,  }\item[{int}]{radius,  }\item[{int}]{width,  }\item[{int}]{z,  }\item[{int}]{branch1\+\_\+exist,  }\item[{int}]{branch2\+\_\+exist }\end{DoxyParamCaption})}
+
+
+
+Рисует дерево 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & положение по оси X центра кроны \\
+\hline
+{\em y} & положение по оси Y центра кроны \\
+\hline
+{\em scale} & коэффицент размера(при значении равном 1 высота 200б радиус кроны 100) \\
+\hline
+{\em color} & отвечает за цвет ствола(рекомендую использовать R\+GB) \\
+\hline
+{\em radius} & прибавка к радиусу кроны \\
+\hline
+{\em width} & толщина ствола(в пикселях) \\
+\hline
+{\em z} & толщина веток(в пикселях) \\
+\hline
+{\em branch1\+\_\+exist} & отвечает за существование правой ветки(при любом значении больше 0 ветка существует) \\
+\hline
+{\em branch2\+\_\+exist} & отвечает за существование левой ветки(при любом значении больше 0 ветка существует)\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+\hyperlink{_konstantin_inshakov_lib_8h_abeb16ad752a77e9023fb623f5d52f541}{drawTree1}(700,700,1,TX\_BLACK,1,25,10,1,1)
+\end{DoxyCode}
+ \hypertarget{_konstantin_inshakov_lib_8h_a7d836fd07b05caa1bc10006d4b21d46b}{}\label{_konstantin_inshakov_lib_8h_a7d836fd07b05caa1bc10006d4b21d46b} 
+\index{Konstantin\+Inshakov\+Lib.\+h@{Konstantin\+Inshakov\+Lib.\+h}!draw\+Tree2@{draw\+Tree2}}
+\index{draw\+Tree2@{draw\+Tree2}!Konstantin\+Inshakov\+Lib.\+h@{Konstantin\+Inshakov\+Lib.\+h}}
+\subsubsection{\texorpdfstring{draw\+Tree2()}{drawTree2()}}
+{\footnotesize\ttfamily void draw\+Tree2 (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{scale,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color1,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color2,  }\item[{int}]{high,  }\item[{int}]{width,  }\item[{int}]{z,  }\item[{int}]{width2,  }\item[{int}]{width3 }\end{DoxyParamCaption})}
+
+
+
+Рисует ель 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & положение по оси X верхней точки верхнего треугольника \\
+\hline
+{\em y} & положение по оси Y верхней точки верхнего треугольника \\
+\hline
+{\em scale} & коэффицент размера(при значении равном 1 высота 375 ширина нижнего треугольника 350 ) \\
+\hline
+{\em color1} & цвет листвы \\
+\hline
+{\em color2} & цвет ствола \\
+\hline
+{\em high} & перемещение верхней точки верхнего треугольника по оси y \\
+\hline
+{\em width} & прибавка к ширине нижнего треугольника(симметрия сохраняетя) \\
+\hline
+{\em z} & прибавка к длине ствола \\
+\hline
+{\em width2} & прибавка к ширине среднего треугольника(симметрия сохраняетя) \\
+\hline
+{\em width3} & прибавка к ширине верхнего треугольника(симметрия сохраняетя)\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+\hyperlink{_konstantin_inshakov_lib_8h_a7d836fd07b05caa1bc10006d4b21d46b}{drawTree2}(1150,450,1,TX\_GREEN,RGB(139,69,19),0,0,0,0,0)
+\end{DoxyCode}
+ 

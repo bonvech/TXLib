@@ -1,0 +1,198 @@
+\hypertarget{_znamenka_lib_8h}{}\section{Файл Znamenka\+Lib.\+h}
+\label{_znamenka_lib_8h}\index{Znamenka\+Lib.\+h@{Znamenka\+Lib.\+h}}
+
+
+Библиотека персонажей Знаменской Лены (Для Тупого Художника).  
+
+
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_znamenka_lib_8h_aa670c9025d28545776a0df3a8de2c936}{draw\+Piat} (int x, int y, double s, C\+O\+L\+O\+R\+R\+EF color, int h)
+\begin{DoxyCompactList}\small\item\em Фигура-\/пробник Пят Рисует простейший пятиугольник. (малополезная на самом деле фигура, созданая для тестирования простейших функций и т.\+п.) \end{DoxyCompactList}\item 
+void \hyperlink{_znamenka_lib_8h_aeebab20b88a4ba4673d86371c5ea3d6c}{draw\+Bird} (int x, int y, double s, C\+O\+L\+O\+R\+R\+EF color, C\+O\+L\+O\+R\+R\+EF color1, int h, int k, int sleep\+\_\+k, int p)
+\begin{DoxyCompactList}\small\item\em Птичка Чирикиевна Рисует птицу. \end{DoxyCompactList}\item 
+void \hyperlink{_znamenka_lib_8h_adb493e457b53240fde1c5c0d140ecaa0}{draw\+Sun} (int x, int y, double s, C\+O\+L\+O\+R\+R\+EF color, int k, int q)
+\begin{DoxyCompactList}\small\item\em Солнце Рисует солнце. \end{DoxyCompactList}\item 
+void \hyperlink{_znamenka_lib_8h_aad14e04d51650a3aebfc1d8ee13fa9c9}{draw\+House} (int x, int y, double s, C\+O\+L\+O\+R\+R\+EF color, C\+O\+L\+O\+R\+R\+EF color1, C\+O\+L\+O\+R\+R\+EF color2, int light\+\_\+on, int h, int t, int l, C\+O\+L\+O\+R\+R\+EF color3, C\+O\+L\+O\+R\+R\+EF color4, int k)
+\begin{DoxyCompactList}\small\item\em Дом Рисует дом. \end{DoxyCompactList}\item 
+void \hyperlink{_znamenka_lib_8h_a0aacfe3aec2efe1ea055112722bba0d3}{draw\+Krone} (int x, int y, double s, C\+O\+L\+O\+R\+R\+EF color, C\+O\+L\+O\+R\+R\+EF color1, int t, int p)
+\begin{DoxyCompactList}\small\item\em Коронка Рисует 7-\/угольную шапку-\/коронку. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Библиотека персонажей Знаменской Лены (Для Тупого Художника). 
+
+Если Вами была выбрана(или вам досталась) данная библиотека -\/ считайте, что Вам почти повезло. Спойлер\+: эта библиотека примитивна. 
+
+\subsection{Функции}
+\hypertarget{_znamenka_lib_8h_aeebab20b88a4ba4673d86371c5ea3d6c}{}\label{_znamenka_lib_8h_aeebab20b88a4ba4673d86371c5ea3d6c} 
+\index{Znamenka\+Lib.\+h@{Znamenka\+Lib.\+h}!draw\+Bird@{draw\+Bird}}
+\index{draw\+Bird@{draw\+Bird}!Znamenka\+Lib.\+h@{Znamenka\+Lib.\+h}}
+\subsubsection{\texorpdfstring{draw\+Bird()}{drawBird()}}
+{\footnotesize\ttfamily void draw\+Bird (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{s,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color1,  }\item[{int}]{h,  }\item[{int}]{k,  }\item[{int}]{sleep\+\_\+k,  }\item[{int}]{p }\end{DoxyParamCaption})}
+
+
+
+Птичка Чирикиевна Рисует птицу. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & X-\/координата опроной точки \\
+\hline
+{\em y} & Y-\/координата опорной точки \\
+\hline
+{\em s} & параметр размера \\
+\hline
+{\em color} & цвет тела и клюва \\
+\hline
+{\em color1} & цвет крыла \\
+\hline
+{\em h} & Подъём/опускание крыла(в недвижимой позици), изменение координаты по Y-\/оси кончика крыла \\
+\hline
+{\em k} & Подъём/опускание клюва(в недвижимой позици), изменение координаты по Y-\/оси кончика клюва \\
+\hline
+{\em sleep\+\_\+k} & параметр глаза\+: при значении 1 -\/ глаз открыт, 0 -\/ закрыт \\
+\hline
+{\em p} & параметр поворота птицы {\bfseries (при отрицательном значении переменной -\/ поворот вправо клювом, при положительном -\/ влево)}\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+\hyperlink{_znamenka_lib_8h_aeebab20b88a4ba4673d86371c5ea3d6c}{drawBird}(200, 150, 1, (RGB(0, 255, 204)), (RGB(0,51,51)), 10, 10, 1, -1);
+\end{DoxyCode}
+ \hypertarget{_znamenka_lib_8h_aad14e04d51650a3aebfc1d8ee13fa9c9}{}\label{_znamenka_lib_8h_aad14e04d51650a3aebfc1d8ee13fa9c9} 
+\index{Znamenka\+Lib.\+h@{Znamenka\+Lib.\+h}!draw\+House@{draw\+House}}
+\index{draw\+House@{draw\+House}!Znamenka\+Lib.\+h@{Znamenka\+Lib.\+h}}
+\subsubsection{\texorpdfstring{draw\+House()}{drawHouse()}}
+{\footnotesize\ttfamily void draw\+House (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{s,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color1,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color2,  }\item[{int}]{light\+\_\+on,  }\item[{int}]{h,  }\item[{int}]{t,  }\item[{int}]{l,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color3,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color4,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+
+
+Дом Рисует дом. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & X-\/координата опроной точки \\
+\hline
+{\em y} & Y-\/координата опорной точки \\
+\hline
+{\em s} & параметр размера \\
+\hline
+{\em color} & цвет крыши \\
+\hline
+{\em color1} & цвет стен дома \\
+\hline
+{\em color2} & цвет рамы окна, каёмки двери и самой двери \\
+\hline
+{\em light\+\_\+on} & параметр цвета света в доме\+: при значении 1 -\/ color3, 0 -\/ color4 \\
+\hline
+{\em h} & парметр высоты крыши \\
+\hline
+{\em t} & параметр ширины дома {\bfseries (влево от двери)} {\bfseries (не рассширяет дверь)} \\
+\hline
+{\em l} & параметр раскрытия двери \\
+\hline
+{\em color3} & цвет света в доме при значении light\+\_\+on 1 \\
+\hline
+{\em color4} & цвет света в доме при значении light\+\_\+on 0 \\
+\hline
+{\em k} & параметр наклона крыши\+: т.\+е. перемещение верней точки крыши по X-\/оси {\bfseries (при отрицательном значении перменной -\/ вправо, при положительном -\/ влево)}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Предупреждения}
+{\bfseries Следует использовать значения переменной l (параметр раскрытия двери) в условиях 0 $<$= l $<$= 100.}
+\end{DoxyWarning}
+
+\begin{DoxyCode}
+\hyperlink{_alex_lib_8h_a1e039a72fb6d88b7e51643a5e4aea160}{drawHouse}(100, 600, 0.5, (RGB (178, 34, 34)), (RGB (140, 80, 50)), (TX\_BLACK), 1, 10, 20, 40, (
+      TX\_YELLOW), (TX\_BLUE), -50);
+\end{DoxyCode}
+ \hypertarget{_znamenka_lib_8h_a0aacfe3aec2efe1ea055112722bba0d3}{}\label{_znamenka_lib_8h_a0aacfe3aec2efe1ea055112722bba0d3} 
+\index{Znamenka\+Lib.\+h@{Znamenka\+Lib.\+h}!draw\+Krone@{draw\+Krone}}
+\index{draw\+Krone@{draw\+Krone}!Znamenka\+Lib.\+h@{Znamenka\+Lib.\+h}}
+\subsubsection{\texorpdfstring{draw\+Krone()}{drawKrone()}}
+{\footnotesize\ttfamily void draw\+Krone (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{s,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color1,  }\item[{int}]{t,  }\item[{int}]{p }\end{DoxyParamCaption})}
+
+
+
+Коронка Рисует 7-\/угольную шапку-\/коронку. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & X-\/координата опроной точки \\
+\hline
+{\em y} & Y-\/координата опорной точки \\
+\hline
+{\em s} & параметр размера \\
+\hline
+{\em color} & цвет коронки \\
+\hline
+{\em color1} & цвет ортодиагонального четырёхугольника на коронке \\
+\hline
+{\em t} & параметр ширины размаха боковых верхних уголков \\
+\hline
+{\em p} & параметр высоты среднего уголка\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+\hyperlink{_znamenka_lib_8h_a0aacfe3aec2efe1ea055112722bba0d3}{drawKrone}(200, 300, 2, (RGB (255, 128, 25)), (RGB (204, 20, 102)), 100, 40);
+\end{DoxyCode}
+ \hypertarget{_znamenka_lib_8h_aa670c9025d28545776a0df3a8de2c936}{}\label{_znamenka_lib_8h_aa670c9025d28545776a0df3a8de2c936} 
+\index{Znamenka\+Lib.\+h@{Znamenka\+Lib.\+h}!draw\+Piat@{draw\+Piat}}
+\index{draw\+Piat@{draw\+Piat}!Znamenka\+Lib.\+h@{Znamenka\+Lib.\+h}}
+\subsubsection{\texorpdfstring{draw\+Piat()}{drawPiat()}}
+{\footnotesize\ttfamily void draw\+Piat (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{s,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+
+
+Фигура-\/пробник Пят Рисует простейший пятиугольник. (малополезная на самом деле фигура, созданая для тестирования простейших функций и т.\+п.) 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & X-\/координата опроной точки \\
+\hline
+{\em y} & Y-\/координата опорной точки \\
+\hline
+{\em s} & параметр размера \\
+\hline
+{\em color} & цвет фигуры \\
+\hline
+{\em h} & расстояние, изменения координаты по X-\/оси среднего левого угла {\bfseries (Следовательно, рекомендуются отрицательные значения перемнной h)}\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+\hyperlink{_znamenka_lib_8h_aa670c9025d28545776a0df3a8de2c936}{drawPiat}(400, 100, 2,(RGB(100,100,50)), -5);
+\end{DoxyCode}
+ \hypertarget{_znamenka_lib_8h_adb493e457b53240fde1c5c0d140ecaa0}{}\label{_znamenka_lib_8h_adb493e457b53240fde1c5c0d140ecaa0} 
+\index{Znamenka\+Lib.\+h@{Znamenka\+Lib.\+h}!draw\+Sun@{draw\+Sun}}
+\index{draw\+Sun@{draw\+Sun}!Znamenka\+Lib.\+h@{Znamenka\+Lib.\+h}}
+\subsubsection{\texorpdfstring{draw\+Sun()}{drawSun()}}
+{\footnotesize\ttfamily void draw\+Sun (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{s,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color,  }\item[{int}]{k,  }\item[{int}]{q }\end{DoxyParamCaption})}
+
+
+
+Солнце Рисует солнце. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & X-\/координата опроной точки \\
+\hline
+{\em y} & Y-\/координата опорной точки \\
+\hline
+{\em s} & параметр размера \\
+\hline
+{\em color} & цвет солнца \\
+\hline
+{\em k} & параметр длины лучей \\
+\hline
+{\em q} & параметр радиуса солнца {\bfseries (радиус определяется по 150-\/q)}\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+\hyperlink{_alex_lib_8h_a866ae2de2bd9eaae72157ea4c38c2803}{drawSun}(100, 400, 0.5, (RGB(255, 255, 30)), 10, 10);
+\end{DoxyCode}
+ 

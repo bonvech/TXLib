@@ -1,0 +1,256 @@
+\hypertarget{varya_lib_8h}{}\section{Файл varya\+Lib.\+h}
+\label{varya_lib_8h}\index{varya\+Lib.\+h@{varya\+Lib.\+h}}
+{\ttfamily \#include \char`\"{}T\+X\+Lib.\+h\char`\"{}}\newline
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{varya_lib_8h_ae0466f1aed3e1a5682e074d6e7d56a80}{drou\+Woman} (int x, int y, double size, C\+O\+L\+O\+R\+R\+EF dress\+Color, int right\+Hand, int left\+Hand, int right\+Leg, int left\+Leg)
+\begin{DoxyCompactList}\small\item\em рисует человека женского пола \end{DoxyCompactList}\item 
+void \hyperlink{varya_lib_8h_ac50ca5cdab7851a1537fc0e1754e62f6}{drou\+Man} (int x, int y, double size, C\+O\+L\+O\+R\+R\+EF body\+Color, int right\+Hand, int left\+Hand, int right\+Leg, int left\+Leg)
+\begin{DoxyCompactList}\small\item\em рисует человека мужского пола \end{DoxyCompactList}\item 
+void \hyperlink{varya_lib_8h_a4a138bcbb7aad0ce4dbd63cf53865226}{drou\+Ketchup} (int x, int y, double size, C\+O\+L\+O\+R\+R\+EF sause\+Color, C\+O\+L\+O\+R\+R\+EF cap\+Color, C\+O\+L\+O\+R\+R\+EF upper\+Label\+Color, C\+O\+L\+O\+R\+R\+EF glare\+Color, C\+O\+L\+O\+R\+R\+EF lower\+Label\+Color)
+\begin{DoxyCompactList}\small\item\em рисует бутылку с соусом \end{DoxyCompactList}\item 
+void \hyperlink{varya_lib_8h_a4c1e3d2c79b924a25c55e6bcb6145b86}{drou\+Knife} (int x, int y, double size, C\+O\+L\+O\+R\+R\+EF blade\+Color, C\+O\+L\+O\+R\+R\+EF handle\+Color, C\+O\+L\+O\+R\+R\+EF nail1\+Color, C\+O\+L\+O\+R\+R\+EF nail2\+Color, C\+O\+L\+O\+R\+R\+EF nail3\+Color)
+\begin{DoxyCompactList}\small\item\em рисует нож \end{DoxyCompactList}\item 
+void \hyperlink{varya_lib_8h_a6743aa28d18c6e6a06a11a8749ca07f9}{drou\+Window} (int x, int y, double size, C\+O\+L\+O\+R\+R\+EF color, C\+O\+L\+O\+R\+R\+EF circuit\+Color, int circuit\+Width)
+\begin{DoxyCompactList}\small\item\em рисует окно \end{DoxyCompactList}\item 
+void \hyperlink{varya_lib_8h_acd5742ee57c480aec30b6e386da20685}{drou\+Piece\+Of\+House} (int x, int y, double size, C\+O\+L\+O\+R\+R\+EF color, C\+O\+L\+O\+R\+R\+EF windows\+Color, C\+O\+L\+O\+R\+R\+EF windows\+Circuit\+Color, int windows\+Circuit\+Width, int window, C\+O\+L\+O\+R\+R\+EF window\+Color)
+\begin{DoxyCompactList}\small\item\em рисует нож \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Функции}
+\hypertarget{varya_lib_8h_a4a138bcbb7aad0ce4dbd63cf53865226}{}\label{varya_lib_8h_a4a138bcbb7aad0ce4dbd63cf53865226} 
+\index{varya\+Lib.\+h@{varya\+Lib.\+h}!drou\+Ketchup@{drou\+Ketchup}}
+\index{drou\+Ketchup@{drou\+Ketchup}!varya\+Lib.\+h@{varya\+Lib.\+h}}
+\subsubsection{\texorpdfstring{drou\+Ketchup()}{drouKetchup()}}
+{\footnotesize\ttfamily void drou\+Ketchup (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{size,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{sause\+Color,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{cap\+Color,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{upper\+Label\+Color,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{glare\+Color,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{lower\+Label\+Color }\end{DoxyParamCaption})}
+
+
+
+рисует бутылку с соусом 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & координата по x \\
+\hline
+{\em y} & координата по y \\
+\hline
+{\em size} & размер \\
+\hline
+{\em sause\+Color} & цвет соуса \\
+\hline
+{\em cap\+Color} & цвет крышки \\
+\hline
+{\em upper\+Label\+Color} & цвет верхней этикетки \\
+\hline
+{\em glare\+Color} & цвет блика \\
+\hline
+{\em lower\+Label\+Color} & цвет нижней этикетки \begin{DoxyVerb}     с координатой по у что то не так
+\end{DoxyVerb}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+\hyperlink{varya_lib_8h_a4a138bcbb7aad0ce4dbd63cf53865226}{drouKetchup}(650, 800,0.8, RGB(165, 42, 42), RGB(255, 245, 238),RGB(255, 245, 238),RGB(255, 250, 
+      250),RGB(255, 245, 238) );
+\end{DoxyCode}
+ \hypertarget{varya_lib_8h_a4c1e3d2c79b924a25c55e6bcb6145b86}{}\label{varya_lib_8h_a4c1e3d2c79b924a25c55e6bcb6145b86} 
+\index{varya\+Lib.\+h@{varya\+Lib.\+h}!drou\+Knife@{drou\+Knife}}
+\index{drou\+Knife@{drou\+Knife}!varya\+Lib.\+h@{varya\+Lib.\+h}}
+\subsubsection{\texorpdfstring{drou\+Knife()}{drouKnife()}}
+{\footnotesize\ttfamily void drou\+Knife (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{size,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{blade\+Color,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{handle\+Color,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{nail1\+Color,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{nail2\+Color,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{nail3\+Color }\end{DoxyParamCaption})}
+
+
+
+рисует нож 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & координата по x \\
+\hline
+{\em y} & координата по y \\
+\hline
+{\em size} & размер \\
+\hline
+{\em blade\+Color} & цвет лезвия \\
+\hline
+{\em handle\+Color} & цвет рукоядки \\
+\hline
+{\em nail1\+Color} & цвет первой заклепки \\
+\hline
+{\em nail2\+Color} & цвет второй заклепки \\
+\hline
+{\em nail3\+Color} & цвет третьей заклепки \begin{DoxyVerb}     с координатой по у что то не так
+\end{DoxyVerb}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+\hyperlink{varya_lib_8h_a4c1e3d2c79b924a25c55e6bcb6145b86}{drouKnife}(1000, 750,1, RGB(220, 220, 220), RGB(160, 82, 45), RGB(220, 220, 220), RGB(220, 220, 220
+      ), RGB(220, 220, 220) );
+\end{DoxyCode}
+ \hypertarget{varya_lib_8h_ac50ca5cdab7851a1537fc0e1754e62f6}{}\label{varya_lib_8h_ac50ca5cdab7851a1537fc0e1754e62f6} 
+\index{varya\+Lib.\+h@{varya\+Lib.\+h}!drou\+Man@{drou\+Man}}
+\index{drou\+Man@{drou\+Man}!varya\+Lib.\+h@{varya\+Lib.\+h}}
+\subsubsection{\texorpdfstring{drou\+Man()}{drouMan()}}
+{\footnotesize\ttfamily void drou\+Man (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{size,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{body\+Color,  }\item[{int}]{right\+Hand,  }\item[{int}]{left\+Hand,  }\item[{int}]{right\+Leg,  }\item[{int}]{left\+Leg }\end{DoxyParamCaption})}
+
+
+
+рисует человека мужского пола 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & координата по x \\
+\hline
+{\em y} & координата по y \\
+\hline
+{\em size} & размер \\
+\hline
+{\em body\+Color} & цвет тела \\
+\hline
+{\em right\+Hand} & положение правой руки \\
+\hline
+{\em left\+Hand} & положение левой руки \\
+\hline
+{\em right\+Leg} & положение правой ноги \\
+\hline
+{\em left\+Leg} & положение левой ноги \begin{DoxyVerb}     с координатой по у что то не так
+\end{DoxyVerb}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+\textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i<15; i++)\{
+
+   \textcolor{keywordtype}{int} leftLeg = i%4 == 0 ? 0 : i%4 == 1 ? 2 : i%4 == 2 ? 3 : 1;
+   \textcolor{keywordtype}{int} rightLeg = i%4 == 0 ? 3 : i%4 == 1 ? 1 : i%4 == 2 ? 0 : 2;
+   \hyperlink{varya_lib_8h_ac50ca5cdab7851a1537fc0e1754e62f6}{drouMan}(1200, 900, 0.5, RGB(0, 128, 128), 0, 0, rightLeg,leftLeg);
+
+    txSleep(500);
+
+   txSetFillColor (RGB(0, 0, 0));
+   txClear();
+
+ \}
+\end{DoxyCode}
+ \hypertarget{varya_lib_8h_acd5742ee57c480aec30b6e386da20685}{}\label{varya_lib_8h_acd5742ee57c480aec30b6e386da20685} 
+\index{varya\+Lib.\+h@{varya\+Lib.\+h}!drou\+Piece\+Of\+House@{drou\+Piece\+Of\+House}}
+\index{drou\+Piece\+Of\+House@{drou\+Piece\+Of\+House}!varya\+Lib.\+h@{varya\+Lib.\+h}}
+\subsubsection{\texorpdfstring{drou\+Piece\+Of\+House()}{drouPieceOfHouse()}}
+{\footnotesize\ttfamily void drou\+Piece\+Of\+House (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{size,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{windows\+Color,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{windows\+Circuit\+Color,  }\item[{int}]{windows\+Circuit\+Width,  }\item[{int}]{window,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{window\+Color }\end{DoxyParamCaption})}
+
+
+
+рисует нож 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & координата по x \\
+\hline
+{\em y} & координата по y \\
+\hline
+{\em size} & размер \\
+\hline
+{\em color} & цвет дома \\
+\hline
+{\em windows\+Color} & цвет окон \\
+\hline
+{\em windows\+Circuit\+Color} & цвет рам окон \\
+\hline
+{\em windows\+Circuit\+Width} & толщина рам \\
+\hline
+{\em window} & номер окна с другим цветом \\
+\hline
+{\em window\+Color} & другой цвет \begin{DoxyVerb}     с координатой по у что то не так
+\end{DoxyVerb}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+\hyperlink{varya_lib_8h_a4c1e3d2c79b924a25c55e6bcb6145b86}{drouKnife}(1000, 750,1, RGB(220, 220, 220), RGB(160, 82, 45), RGB(220, 220, 220), RGB(220, 220, 220
+      ), RGB(220, 220, 220) );
+\end{DoxyCode}
+ \hypertarget{varya_lib_8h_a6743aa28d18c6e6a06a11a8749ca07f9}{}\label{varya_lib_8h_a6743aa28d18c6e6a06a11a8749ca07f9} 
+\index{varya\+Lib.\+h@{varya\+Lib.\+h}!drou\+Window@{drou\+Window}}
+\index{drou\+Window@{drou\+Window}!varya\+Lib.\+h@{varya\+Lib.\+h}}
+\subsubsection{\texorpdfstring{drou\+Window()}{drouWindow()}}
+{\footnotesize\ttfamily void drou\+Window (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{size,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{circuit\+Color,  }\item[{int}]{circuit\+Width }\end{DoxyParamCaption})}
+
+
+
+рисует окно 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & координата по x \\
+\hline
+{\em y} & координата по y \\
+\hline
+{\em size} & размер \\
+\hline
+{\em color} & цвет окна \\
+\hline
+{\em circuit\+Color} & цвет рамы \\
+\hline
+{\em circuit\+Width} & толщина рамы \begin{DoxyVerb}     с координатой по у что то не так
+\end{DoxyVerb}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+\hyperlink{varya_lib_8h_a4c1e3d2c79b924a25c55e6bcb6145b86}{drouKnife}(1000, 750,1, RGB(220, 220, 220), RGB(160, 82, 45), RGB(220, 220, 220), RGB(220, 220, 220
+      ), RGB(220, 220, 220) );
+\end{DoxyCode}
+ \hypertarget{varya_lib_8h_ae0466f1aed3e1a5682e074d6e7d56a80}{}\label{varya_lib_8h_ae0466f1aed3e1a5682e074d6e7d56a80} 
+\index{varya\+Lib.\+h@{varya\+Lib.\+h}!drou\+Woman@{drou\+Woman}}
+\index{drou\+Woman@{drou\+Woman}!varya\+Lib.\+h@{varya\+Lib.\+h}}
+\subsubsection{\texorpdfstring{drou\+Woman()}{drouWoman()}}
+{\footnotesize\ttfamily void drou\+Woman (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{size,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{dress\+Color,  }\item[{int}]{right\+Hand,  }\item[{int}]{left\+Hand,  }\item[{int}]{right\+Leg,  }\item[{int}]{left\+Leg }\end{DoxyParamCaption})}
+
+
+
+рисует человека женского пола 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & координата по x \\
+\hline
+{\em y} & координата по y \\
+\hline
+{\em size} & размер \\
+\hline
+{\em body\+Color} & цвет тела \\
+\hline
+{\em right\+Hand} & положение правой руки \\
+\hline
+{\em left\+Hand} & положение левой руки \\
+\hline
+{\em right\+Leg} & положение правой ноги \\
+\hline
+{\em left\+Leg} & положение левой ноги \begin{DoxyVerb}     с координатой по у что то не так
+\end{DoxyVerb}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+\textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i<15; i++)\{
+
+   \textcolor{keywordtype}{int} leftLeg = i%4 == 0 ? 0 : i%4 == 1 ? 2 : i%4 == 2 ? 3 : 1;
+   \textcolor{keywordtype}{int} rightLeg = i%4 == 0 ? 3 : i%4 == 1 ? 1 : i%4 == 2 ? 0 : 2;
+   \hyperlink{varya_lib_8h_ae0466f1aed3e1a5682e074d6e7d56a80}{drouWoman}(1200, 900, 0.5, RGB(0, 128, 128), 0, 0, rightLeg,leftLeg);
+
+    txSleep(500);
+
+   txSetFillColor (RGB(0, 0, 0));
+   txClear();
+
+ \}
+\end{DoxyCode}
+ 

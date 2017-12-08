@@ -1,0 +1,113 @@
+\hypertarget{group___xD0_x9F_xD1_x80_xD0_xBE_xD1_x87_xD0_xB5_xD0_xB5}{}\section{Прочее}
+\label{group___xD0_x9F_xD1_x80_xD0_xBE_xD1_x87_xD0_xB5_xD0_xB5}\index{Прочее@{Прочее}}
+\subsection*{Рисование колпака/часовни.}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___xD0_x9F_xD1_x80_xD0_xBE_xD1_x87_xD0_xB5_xD0_xB5_gaca8114d8b42eeb1daa86ff2b88b7e603}{draw\+Chasovnia} (int x, int y, double scale, C\+O\+L\+O\+R\+R\+EF color, C\+O\+L\+O\+R\+R\+EF colort, C\+O\+L\+O\+R\+R\+EF colorte, C\+O\+L\+O\+R\+R\+EF colorn, int l, int q, int p, int g, int w, int z, int t)
+\begin{DoxyCompactList}\small\item\em Рисует часовню \end{DoxyCompactList}\item 
+void \hyperlink{group___xD0_x9F_xD1_x80_xD0_xBE_xD1_x87_xD0_xB5_xD0_xB5_gaba1fed4000eccfe144e90b4fd8d5cd66}{draw\+Kolpak} (int x, int y, double scale, C\+O\+L\+O\+R\+R\+EF color, C\+O\+L\+O\+R\+R\+EF colori, C\+O\+L\+O\+R\+R\+EF colora, C\+O\+L\+O\+R\+R\+EF coloru, int e, int d, int w, int j, int s, int f)
+\begin{DoxyCompactList}\small\item\em Рисует часовню \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+\subsection{Функции}
+\hypertarget{group___xD0_x9F_xD1_x80_xD0_xBE_xD1_x87_xD0_xB5_xD0_xB5_gaca8114d8b42eeb1daa86ff2b88b7e603}{}\label{group___xD0_x9F_xD1_x80_xD0_xBE_xD1_x87_xD0_xB5_xD0_xB5_gaca8114d8b42eeb1daa86ff2b88b7e603} 
+\index{Прочее@{Прочее}!draw\+Chasovnia@{draw\+Chasovnia}}
+\index{draw\+Chasovnia@{draw\+Chasovnia}!Прочее@{Прочее}}
+\subsubsection{\texorpdfstring{draw\+Chasovnia()}{drawChasovnia()}}
+{\footnotesize\ttfamily void draw\+Chasovnia (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{scale,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{colort,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{colorte,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{colorn,  }\item[{int}]{l,  }\item[{int}]{q,  }\item[{int}]{p,  }\item[{int}]{g,  }\item[{int}]{w,  }\item[{int}]{z,  }\item[{int}]{t }\end{DoxyParamCaption})}
+
+
+
+Рисует часовню 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & x-\/абсцисса центра круга, лежащего внутри полигона ( часовни ). \\
+\hline
+{\em y} & y-\/разность ординаты нижнего левого угла полигона ( часовни ) и 100. \\
+\hline
+{\em scale} & scale-\/коэффицент размера часовни и ее составляющих. \\
+\hline
+{\em color} & color-\/возможный цвет полигона ( часовни ) ( полностью ) ( смотр. t ). \\
+\hline
+{\em colort} & colort-\/цвет круга, внутри которого лежит круг, лежащий внутри полигона ( часовни ) ( без контура ) ( на вид ). \\
+\hline
+{\em colorte} & colorte-\/цвет контура круга, внутри которого лежит круг, лежащий внутри полигона( на вид ). \\
+\hline
+{\em colorn} & colorn-\/возможный цвет полигона ( часовни ) ( полностью ) ( смотр. t ). \\
+\hline
+{\em l} & l-\/радиус круга, внутри которого лежит круг, лежащий внутри полигона ( часовни ) ( на вид ), при scale=1. \\
+\hline
+{\em q} & q-\/разность абсциссы точки, являющийся концом нижней ( при \{q, p, z\}=0 ) линии ( из двух, смотря по необщему концу), другим концом которой явлется центр круга, лежащего внутри полигона ( часовни ) и \mbox{[}суммы x и 5\mbox{]} , при scale=1. \\
+\hline
+{\em p} & p-\/разность абсциссы точки, являющийся концом верхней ( при \{q, p, z\}=0 ) линии ( из двух, смотря по необщему концу), другим концом которой явлется центр круга, лежащего внутри полигона ( часовни ) и x , при scale=1. \\
+\hline
+{\em g} & g-\/толщина контура круга, внутри которого лежит круг, лежащий внутри полигона ( часовни ) ( на вид ). \\
+\hline
+{\em w} & w-\/разность y и \mbox{[}суммы ординаты высшей точки полигона ( часовни ) и \{суммы 50 и z\}\mbox{]} , при scale=1. \\
+\hline
+{\em z} & z-\/разность y и ординаты верхней правой точки полигона ( часовни ), при scale=1. \\
+\hline
+{\em t} & t-\/параметр, при значении которого меньше 1000, цвет полигона ( часовни ) становиться colorn, а при другом значение -\/ color. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Заметки}
+x0=325,y0=500 
+\end{DoxyNote}
+\begin{DoxyWarning}{Предупреждения}
+Важно\+: 
+
+-\/6$<$q$<$6; 
+
+-\/6$<$p$<$6.  
+\begin{DoxyCode}
+\hyperlink{group___xD0_x9F_xD1_x80_xD0_xBE_xD1_x87_xD0_xB5_xD0_xB5_gaca8114d8b42eeb1daa86ff2b88b7e603}{drawChasovnia}(425,400,0.5, TX\_BROWN, TX\_YELLOW, TX\_BLACK, TX\_GREEN, 30, 5, -3, 2, 10, 10, 2);
+\end{DoxyCode}
+ 
+\end{DoxyWarning}
+\hypertarget{group___xD0_x9F_xD1_x80_xD0_xBE_xD1_x87_xD0_xB5_xD0_xB5_gaba1fed4000eccfe144e90b4fd8d5cd66}{}\label{group___xD0_x9F_xD1_x80_xD0_xBE_xD1_x87_xD0_xB5_xD0_xB5_gaba1fed4000eccfe144e90b4fd8d5cd66} 
+\index{Прочее@{Прочее}!draw\+Kolpak@{draw\+Kolpak}}
+\index{draw\+Kolpak@{draw\+Kolpak}!Прочее@{Прочее}}
+\subsubsection{\texorpdfstring{draw\+Kolpak()}{drawKolpak()}}
+{\footnotesize\ttfamily void draw\+Kolpak (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{scale,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{colori,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{colora,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{coloru,  }\item[{int}]{e,  }\item[{int}]{d,  }\item[{int}]{w,  }\item[{int}]{j,  }\item[{int}]{s,  }\item[{int}]{f }\end{DoxyParamCaption})}
+
+
+
+Рисует часовню 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & x-\/абсцисса верхней точки полигона. \\
+\hline
+{\em y} & y-\/ордината верхней точки полигона. \\
+\hline
+{\em scale} & scale-\/коэффицент размера колпака и его составляющих. \\
+\hline
+{\em color} & color-\/цвет полигона ( полностью ). \\
+\hline
+{\em colori} & colori-\/цвет круга, внутри которого лежит круг и центром, которго является точка с координатой x,y, при s$<$50. \\
+\hline
+{\em colora} & colora-\/цвет лучей ( линий находящихся рядом с полигоном ). \\
+\hline
+{\em coloru} & coloru-\/цвет нижнего круга ( без контура ). \\
+\hline
+{\em e} & e-\/радиус круга, внутри которого лежит круг и центром, которго является точка с координатой x,y, при s$<$50, при scale=1. \\
+\hline
+{\em d} & d-\/толщина контура нижнего круга, при scale=1. \\
+\hline
+{\em w} & w-\/разность x и \mbox{[}суммы абсциссы точки, являющийся ближним к полигону концом левого луча и 75\mbox{]}, при scale=1. \\
+\hline
+{\em j} & j-\/разность радиуса круга, внутри которого лежит круг и центром, которго является точка с координатой x,y, при s$<$50 и 50, при scale=1. \\
+\hline
+{\em s} & s-\/разность радиуса круга, который лежит внутри круга и центром, которго является точка с координатой x,y, при s$<$50 и j, при scale=1. \\
+\hline
+{\em f} & f-\/параметр при четном значении которого, его абсциссой центра нижнего круга является сумма x и f, а при нечетном -\/ разность.  
+\begin{DoxyCode}
+\hyperlink{group___xD0_x9F_xD1_x80_xD0_xBE_xD1_x87_xD0_xB5_xD0_xB5_gaba1fed4000eccfe144e90b4fd8d5cd66}{drawKolpak}(250,400,0.5, TX\_GREEN, TX\_LIGHTCYAN, TX\_BLACK, TX\_WHITE, 20, 5, 10, -30, 60, 8);
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}

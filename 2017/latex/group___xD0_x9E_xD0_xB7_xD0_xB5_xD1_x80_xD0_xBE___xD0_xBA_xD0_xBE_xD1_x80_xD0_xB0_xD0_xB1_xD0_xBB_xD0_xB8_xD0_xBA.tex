@@ -1,0 +1,147 @@
+\hypertarget{group___xD0_x9E_xD0_xB7_xD0_xB5_xD1_x80_xD0_xBE___xD0_xBA_xD0_xBE_xD1_x80_xD0_xB0_xD0_xB1_xD0_xBB_xD0_xB8_xD0_xBA}{}\section{Озеро\+\_\+кораблик}
+\label{group___xD0_x9E_xD0_xB7_xD0_xB5_xD1_x80_xD0_xBE___xD0_xBA_xD0_xBE_xD1_x80_xD0_xB0_xD0_xB1_xD0_xBB_xD0_xB8_xD0_xBA}\index{Озеро\+\_\+кораблик@{Озеро\+\_\+кораблик}}
+\subsection*{Рисование озера/кораблика.}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___xD0_x9E_xD0_xB7_xD0_xB5_xD1_x80_xD0_xBE___xD0_xBA_xD0_xBE_xD1_x80_xD0_xB0_xD0_xB1_xD0_xBB_xD0_xB8_xD0_xBA_gac283b8271de77e2bbfeef40a0ed29e33}{draw\+Ozero} (int x, int y, double scale, C\+O\+L\+O\+R\+R\+EF colore, int v)
+\begin{DoxyCompactList}\small\item\em Рисует Озеро \end{DoxyCompactList}\item 
+void \hyperlink{group___xD0_x9E_xD0_xB7_xD0_xB5_xD1_x80_xD0_xBE___xD0_xBA_xD0_xBE_xD1_x80_xD0_xB0_xD0_xB1_xD0_xBB_xD0_xB8_xD0_xBA_gaa5f04a811e13c12ff31d58f8ee9b25cf}{draw\+Korablik} (int x, int y, double scale, C\+O\+L\+O\+R\+R\+EF color, int u, int h, int m)
+\begin{DoxyCompactList}\small\item\em Рисует кораблик \end{DoxyCompactList}\item 
+void \hyperlink{group___xD0_x9E_xD0_xB7_xD0_xB5_xD1_x80_xD0_xBE___xD0_xBA_xD0_xBE_xD1_x80_xD0_xB0_xD0_xB1_xD0_xBB_xD0_xB8_xD0_xBA_gab7ad07d31533ef74695b09102d8aea3e}{draw\+Ozero\+\_\+korablik} (int x, int y, double scale, C\+O\+L\+O\+R\+R\+EF color, C\+O\+L\+O\+R\+R\+EF colore, int v, int u, int h, int m, int a, int b)
+\begin{DoxyCompactList}\small\item\em Рисует Озеро \end{DoxyCompactList}\item 
+void \hyperlink{group___xD0_x9E_xD0_xB7_xD0_xB5_xD1_x80_xD0_xBE___xD0_xBA_xD0_xBE_xD1_x80_xD0_xB0_xD0_xB1_xD0_xBB_xD0_xB8_xD0_xBA_ga1c7d6435fddca717803b799dfa544609}{draw\+Korablik2} (double x, double y, double scale, C\+O\+L\+O\+R\+R\+EF color, int u, int h, int m)
+\begin{DoxyCompactList}\small\item\em Рисует кораблик \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+\subsection{Функции}
+\hypertarget{group___xD0_x9E_xD0_xB7_xD0_xB5_xD1_x80_xD0_xBE___xD0_xBA_xD0_xBE_xD1_x80_xD0_xB0_xD0_xB1_xD0_xBB_xD0_xB8_xD0_xBA_gaa5f04a811e13c12ff31d58f8ee9b25cf}{}\label{group___xD0_x9E_xD0_xB7_xD0_xB5_xD1_x80_xD0_xBE___xD0_xBA_xD0_xBE_xD1_x80_xD0_xB0_xD0_xB1_xD0_xBB_xD0_xB8_xD0_xBA_gaa5f04a811e13c12ff31d58f8ee9b25cf} 
+\index{Озеро\+\_\+кораблик@{Озеро\+\_\+кораблик}!draw\+Korablik@{draw\+Korablik}}
+\index{draw\+Korablik@{draw\+Korablik}!Озеро\+\_\+кораблик@{Озеро\+\_\+кораблик}}
+\subsubsection{\texorpdfstring{draw\+Korablik()}{drawKorablik()}}
+{\footnotesize\ttfamily void draw\+Korablik (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{scale,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color,  }\item[{int}]{u,  }\item[{int}]{h,  }\item[{int}]{m }\end{DoxyParamCaption})}
+
+
+
+Рисует кораблик 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & x-\/абсцисса верхней точки кораблика ( фигуры, образованной 4 треугольниками ). \\
+\hline
+{\em y} & y-\/сумма ординаты самой левой точки кораблика ( фигуры, образованной 4 треугольниками ) и 75. \\
+\hline
+{\em scale} & scale-\/коэффицент размера кораблика точки кораблика ( фигуры, образованной 4 треугольниками ). \\
+\hline
+{\em color} & color-\/цвет кораблика ( фигуры, образованной 4 треугольниками ) ( полностью ). \\
+\hline
+{\em u} & u-\/разность y и суммы ординаты верхней точки кораблика ( фигуры, образованной 4 треугольниками ) и 99, при scale=1. u$>$=0 \\
+\hline
+{\em h} & h-\/разность x и суммы абсциссы самой левой точки кораблика ( фигуры, образованной 4 треугольниками ) и 50, при scale=1. h$>$=0 \\
+\hline
+{\em m} & m-\/разность абсциссы самой правой точки кораблика ( фигуры, образованной 4 треугольниками ) и суммы x и 50, при scale=1. m$>$=0  
+\begin{DoxyCode}
+\hyperlink{group___xD0_x9E_xD0_xB7_xD0_xB5_xD1_x80_xD0_xBE___xD0_xBA_xD0_xBE_xD1_x80_xD0_xB0_xD0_xB1_xD0_xBB_xD0_xB8_xD0_xBA_gaa5f04a811e13c12ff31d58f8ee9b25cf}{drawKorablik} (300, 300, 1, TX\_BROWN, 20, 10, 30);
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}
+\hypertarget{group___xD0_x9E_xD0_xB7_xD0_xB5_xD1_x80_xD0_xBE___xD0_xBA_xD0_xBE_xD1_x80_xD0_xB0_xD0_xB1_xD0_xBB_xD0_xB8_xD0_xBA_ga1c7d6435fddca717803b799dfa544609}{}\label{group___xD0_x9E_xD0_xB7_xD0_xB5_xD1_x80_xD0_xBE___xD0_xBA_xD0_xBE_xD1_x80_xD0_xB0_xD0_xB1_xD0_xBB_xD0_xB8_xD0_xBA_ga1c7d6435fddca717803b799dfa544609} 
+\index{Озеро\+\_\+кораблик@{Озеро\+\_\+кораблик}!draw\+Korablik2@{draw\+Korablik2}}
+\index{draw\+Korablik2@{draw\+Korablik2}!Озеро\+\_\+кораблик@{Озеро\+\_\+кораблик}}
+\subsubsection{\texorpdfstring{draw\+Korablik2()}{drawKorablik2()}}
+{\footnotesize\ttfamily void draw\+Korablik2 (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{scale,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color,  }\item[{int}]{u,  }\item[{int}]{h,  }\item[{int}]{m }\end{DoxyParamCaption})}
+
+
+
+Рисует кораблик 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & x-\/абсцисса верхней точки кораблика ( фигуры, образованной 4 треугольниками ) ( возможен нецелый). \\
+\hline
+{\em y} & y-\/сумма ординаты самой левой точки кораблика ( фигуры, образованной 4 треугольниками ) и 75 ( возможен нецелый ). \\
+\hline
+{\em scale} & scale-\/коэффицент размера кораблика точки кораблика ( фигуры, образованной 4 треугольниками ). \\
+\hline
+{\em color} & color-\/цвет кораблика ( фигуры, образованной 4 треугольниками ) ( полностью ). \\
+\hline
+{\em u} & u-\/разность y и суммы ординаты верхней точки кораблика ( фигуры, образованной 4 треугольниками ) и 99, при scale=1. u$>$=0 \\
+\hline
+{\em h} & h-\/разность x и суммы абсциссы самой левой точки кораблика ( фигуры, образованной 4 треугольниками ) и 50, при scale=1. h$>$=0 \\
+\hline
+{\em m} & m-\/разность абсциссы самой правой точки кораблика ( фигуры, образованной 4 треугольниками ) и суммы x и 50, при scale=1. m$>$=0  
+\begin{DoxyCode}
+\hyperlink{group___xD0_x9E_xD0_xB7_xD0_xB5_xD1_x80_xD0_xBE___xD0_xBA_xD0_xBE_xD1_x80_xD0_xB0_xD0_xB1_xD0_xBB_xD0_xB8_xD0_xBA_ga1c7d6435fddca717803b799dfa544609}{drawKorablik2} (300.5, 456.56, 1, TX\_BROWN, 10, 30, 20);
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}
+\hypertarget{group___xD0_x9E_xD0_xB7_xD0_xB5_xD1_x80_xD0_xBE___xD0_xBA_xD0_xBE_xD1_x80_xD0_xB0_xD0_xB1_xD0_xBB_xD0_xB8_xD0_xBA_gac283b8271de77e2bbfeef40a0ed29e33}{}\label{group___xD0_x9E_xD0_xB7_xD0_xB5_xD1_x80_xD0_xBE___xD0_xBA_xD0_xBE_xD1_x80_xD0_xB0_xD0_xB1_xD0_xBB_xD0_xB8_xD0_xBA_gac283b8271de77e2bbfeef40a0ed29e33} 
+\index{Озеро\+\_\+кораблик@{Озеро\+\_\+кораблик}!draw\+Ozero@{draw\+Ozero}}
+\index{draw\+Ozero@{draw\+Ozero}!Озеро\+\_\+кораблик@{Озеро\+\_\+кораблик}}
+\subsubsection{\texorpdfstring{draw\+Ozero()}{drawOzero()}}
+{\footnotesize\ttfamily void draw\+Ozero (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{scale,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{colore,  }\item[{int}]{v }\end{DoxyParamCaption})}
+
+
+
+Рисует Озеро 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & x-\/абсцисса центра круга ( озера ). \\
+\hline
+{\em y} & y-\/ордината центра круга ( озера ). \\
+\hline
+{\em scale} & scale-\/коэффицент размера озера. \\
+\hline
+{\em colore} & colore-\/цвет круга ( озера ) ( без контура ). \\
+\hline
+{\em v} & v-\/разность радиуса круга ( озера ) и 90, при scale=1.  
+\begin{DoxyCode}
+\hyperlink{group___xD0_x9E_xD0_xB7_xD0_xB5_xD1_x80_xD0_xBE___xD0_xBA_xD0_xBE_xD1_x80_xD0_xB0_xD0_xB1_xD0_xBB_xD0_xB8_xD0_xBA_gac283b8271de77e2bbfeef40a0ed29e33}{drawOzero}(500,500,1, TX\_BLUE, 30);
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}
+\hypertarget{group___xD0_x9E_xD0_xB7_xD0_xB5_xD1_x80_xD0_xBE___xD0_xBA_xD0_xBE_xD1_x80_xD0_xB0_xD0_xB1_xD0_xBB_xD0_xB8_xD0_xBA_gab7ad07d31533ef74695b09102d8aea3e}{}\label{group___xD0_x9E_xD0_xB7_xD0_xB5_xD1_x80_xD0_xBE___xD0_xBA_xD0_xBE_xD1_x80_xD0_xB0_xD0_xB1_xD0_xBB_xD0_xB8_xD0_xBA_gab7ad07d31533ef74695b09102d8aea3e} 
+\index{Озеро\+\_\+кораблик@{Озеро\+\_\+кораблик}!draw\+Ozero\+\_\+korablik@{draw\+Ozero\+\_\+korablik}}
+\index{draw\+Ozero\+\_\+korablik@{draw\+Ozero\+\_\+korablik}!Озеро\+\_\+кораблик@{Озеро\+\_\+кораблик}}
+\subsubsection{\texorpdfstring{draw\+Ozero\+\_\+korablik()}{drawOzero\_korablik()}}
+{\footnotesize\ttfamily void draw\+Ozero\+\_\+korablik (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{scale,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{colore,  }\item[{int}]{v,  }\item[{int}]{u,  }\item[{int}]{h,  }\item[{int}]{m,  }\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+
+
+Рисует Озеро 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & x-\/абсцисса центра круга ( озера ). \\
+\hline
+{\em y} & y-\/ордината центра круга ( озера ). \\
+\hline
+{\em scale} & scale-\/коэффицент размера озера и кораблика. \\
+\hline
+{\em colore} & colore-\/цвет круга ( озера ) ( без контура ). \\
+\hline
+{\em color} & color-\/цвет кораблика ( фигуры, образованной 4 треугольниками ) ( полностью ). \\
+\hline
+{\em v} & v-\/разность y и суммы ординаты верхней точки кораблика ( фигуры, образованной 4 треугольниками ) и 99, при scale=1. u$>$=0 \\
+\hline
+{\em u} & u-\/разность радиуса круга ( озера ) и 90, при scale=1. \\
+\hline
+{\em h} & h-\/разность x и суммы абсциссы самой левой точки кораблика ( фигуры, образованной 4 треугольниками ) и 50, при scale=1. h$>$=0 \\
+\hline
+{\em m} & m-\/разность абсциссы самой правой точки кораблика ( фигуры, образованной 4 треугольниками ) и суммы x и 50, при scale=1. m$>$=0 \\
+\hline
+{\em a} & a-\/разность абсциссы верхней точки кораблика ( фигуры, образованной 4 треугольниками ) и x, при scale=1. \\
+\hline
+{\em b} & b-\/разность \mbox{[}суммы ординаты самой левой точки кораблика ( фигуры, образованной 4 треугольниками ) и 75\mbox{]} и y, при scale=1.  
+\begin{DoxyCode}
+\hyperlink{group___xD0_x9E_xD0_xB7_xD0_xB5_xD1_x80_xD0_xBE___xD0_xBA_xD0_xBE_xD1_x80_xD0_xB0_xD0_xB1_xD0_xBB_xD0_xB8_xD0_xBA_gab7ad07d31533ef74695b09102d8aea3e}{drawOzero\_korablik}(425,200,0.5, TX\_YELLOW, TX\_LIGHTGRAY, 50, 50, 75, 55, 30, 40) ;
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}

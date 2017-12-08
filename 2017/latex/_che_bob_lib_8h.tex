@@ -1,0 +1,238 @@
+\hypertarget{_che_bob_lib_8h}{}\section{Файл Che\+Bob\+Lib.\+h}
+\label{_che_bob_lib_8h}\index{Che\+Bob\+Lib.\+h@{Che\+Bob\+Lib.\+h}}
+
+
+Библиотека Владимира Черничкина (Che\+Bob\+Lib).  
+
+
+{\ttfamily \#include $<$T\+X\+Lib.\+h$>$}\newline
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_che_bob_lib_8h_abd1f3eb845949dd9b8bba6a995d3041e}{Draw\+Bug} (int x, int y, double z, C\+O\+L\+O\+R\+R\+EF c, double n, int b, double h)
+\begin{DoxyCompactList}\small\item\em Рисует божью коровку с изменением цвета, размера и высоты. \end{DoxyCompactList}\item 
+void \hyperlink{_che_bob_lib_8h_a219b2f99ea5afa7b8172f5edd1ce0f44}{Draw\+House} (int x, int y, double z, C\+O\+L\+O\+R\+R\+EF c, C\+O\+L\+O\+R\+R\+EF d, double n, int b, double h)
+\begin{DoxyCompactList}\small\item\em Рисует дом с изменением цвета, размера и высоты. \end{DoxyCompactList}\item 
+void \hyperlink{_che_bob_lib_8h_a585f8bcec3e6095f6ebc437a96849e98}{Draw\+Sun} (int x, int y, double z, C\+O\+L\+O\+R\+R\+EF c, C\+O\+L\+O\+R\+R\+EF d, double n, int b)
+\begin{DoxyCompactList}\small\item\em Рисует упоротое солнце с изменением цвета, размера и высоты. \end{DoxyCompactList}\item 
+void \hyperlink{_che_bob_lib_8h_a99232022ccb12c46d58a21853cd47936}{Draw\+Road} (int x, int y, double z, C\+O\+L\+O\+R\+R\+EF c, double n, double l)
+\begin{DoxyCompactList}\small\item\em Рисует дорогу с изменением длины, положения полос и высоты. \end{DoxyCompactList}\item 
+void \hyperlink{_che_bob_lib_8h_a63f68f1b5a9cc880c6048be61801c07e}{Draw\+Car} (int x, int y, double z, C\+O\+L\+O\+R\+R\+EF c, double a, int b)
+\begin{DoxyCompactList}\small\item\em Рисует драгстер с изменением цвета, размера и фар. \end{DoxyCompactList}\item 
+void \hyperlink{_che_bob_lib_8h_a7384b64b2c43d4ee3bfac743df43509e}{Draw\+F\+Wheel} (int x, int y, double z, double a)
+\begin{DoxyCompactList}\small\item\em Должна рисовать переднее колесо для функдии \char`\"{}\+Draw\+Car\char`\"{}. \end{DoxyCompactList}\item 
+\hypertarget{_che_bob_lib_8h_a757b2b334ff71e4157a7df9876f870df}{}\label{_che_bob_lib_8h_a757b2b334ff71e4157a7df9876f870df} 
+void {\bfseries Scene\+\_\+1} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Библиотека Владимира Черничкина (Che\+Bob\+Lib). 
+
+\begin{DoxyWarning}{Предупреждения}
+АХТУНГ!!! Эта библиотека работает ТОЛЬКО совместно с библиотекой Тупого Художника, разработанной И. Р. Дединским (\char`\"{}\+T\+X\+Lib.\+h\char`\"{}) 
+
+
+
+\{ДЛЯ УЧЕНИКОВ\} СМОТРИТЕ СЮДА!!! Если вы вдруг нарушите АВТОРСКОЕ ПРАВО, то вас покарают. Как, я не скажу. Это может быть снайпер за вашим окном, может быть вирусная атака. НО знайте и помните\+: Я за вами слежу! By Chebobka76 
+\end{DoxyWarning}
+
+
+\subsection{Функции}
+\hypertarget{_che_bob_lib_8h_abd1f3eb845949dd9b8bba6a995d3041e}{}\label{_che_bob_lib_8h_abd1f3eb845949dd9b8bba6a995d3041e} 
+\index{Che\+Bob\+Lib.\+h@{Che\+Bob\+Lib.\+h}!Draw\+Bug@{Draw\+Bug}}
+\index{Draw\+Bug@{Draw\+Bug}!Che\+Bob\+Lib.\+h@{Che\+Bob\+Lib.\+h}}
+\subsubsection{\texorpdfstring{Draw\+Bug()}{DrawBug()}}
+{\footnotesize\ttfamily void Draw\+Bug (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{z,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{c,  }\item[{double}]{n,  }\item[{int}]{b,  }\item[{double}]{h }\end{DoxyParamCaption})}
+
+
+
+Рисует божью коровку с изменением цвета, размера и высоты. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & координата по горизонтали \\
+\hline
+{\em y} & координата по вертикали \\
+\hline
+{\em z} & размер (единица -\/ стандартный размер, какое число вводите, ВО столько раз увеличивается размер) \\
+\hline
+{\em c} & цвет божьей коровки (вводите какую-\/нибудь фигню наподобие \char`\"{}\+T\+X\+\_\+\+Y\+E\+L\+L\+O\+W\char`\"{} или \char`\"{}\+R\+G\+B(255, 127, 0)\char`\"{}) \\
+\hline
+{\em n} & расстояние, на которое сдвигаются ножки(вперёд -\/ положительное число, назад -\/ отрицательное) в пикселах \\
+\hline
+{\em b} & цвет пятнышек (только 0 или 1, 0 -\/ чёрные, 1 -\/ белые) \\
+\hline
+{\em h} & высота (единица -\/ стандартная высота, какое число вводите, ВО столько раз увеличивается высота)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Предупреждения}
+если сделать параметр z/n/h слишком большим, то будет печалька ( ?° ?? ?°) 
+
+если сделать параметр x/y слишком большим, то жука не будет ?\+\_\+(?)\+\_\+/?
+\end{DoxyWarning}
+
+\begin{DoxyCode}
+\hyperlink{_che_bob_lib_8h_abd1f3eb845949dd9b8bba6a995d3041e}{DrawBug}(600, 300, 1, RGB(255, 127, 0), 10, 1, 1);
+\textcolor{comment}{//Я - корова}
+\end{DoxyCode}
+ \hypertarget{_che_bob_lib_8h_a63f68f1b5a9cc880c6048be61801c07e}{}\label{_che_bob_lib_8h_a63f68f1b5a9cc880c6048be61801c07e} 
+\index{Che\+Bob\+Lib.\+h@{Che\+Bob\+Lib.\+h}!Draw\+Car@{Draw\+Car}}
+\index{Draw\+Car@{Draw\+Car}!Che\+Bob\+Lib.\+h@{Che\+Bob\+Lib.\+h}}
+\subsubsection{\texorpdfstring{Draw\+Car()}{DrawCar()}}
+{\footnotesize\ttfamily void Draw\+Car (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{z,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{c,  }\item[{double}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+
+
+Рисует драгстер с изменением цвета, размера и фар. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & координата по горизонтали \\
+\hline
+{\em y} & координата по вертикали \\
+\hline
+{\em z} & размер (единица -\/ стандартный размер, какое число вводите, ВО столько раз увеличивается размер) \\
+\hline
+{\em c} & цвет кузова (вводите какую-\/нибудь фигню наподобие \char`\"{}\+T\+X\+\_\+\+Y\+E\+L\+L\+O\+W\char`\"{} или \char`\"{}\+R\+G\+B(255, 127, 0)\char`\"{}) \\
+\hline
+{\em a} & угол, на который поворачивается переднее колесо (функция \char`\"{}\+Draw\+F\+Wheel\char`\"{} в доработке, поэтому просто вводите \char`\"{}0\char`\"{}) \\
+\hline
+{\em b} & включение фары (только 1 и 0. 1 -\/ включена, 0 -\/ выключена)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Предупреждения}
+если сделать параметр z слишком большим, то будет кек (?? ?? ?) 
+
+если сделать параметр x/y слишком большим, то драгстера не будет \mbox{[}??\$??(?? ?° ?? ?°??)??\$??\mbox{]}
+\end{DoxyWarning}
+
+\begin{DoxyCode}
+\hyperlink{_che_bob_lib_8h_a63f68f1b5a9cc880c6048be61801c07e}{DrawCar}(600, 300, 1, TX\_ORANGE, 0, 1);
+\textcolor{comment}{//Я - Драгстер}
+\end{DoxyCode}
+ \hypertarget{_che_bob_lib_8h_a7384b64b2c43d4ee3bfac743df43509e}{}\label{_che_bob_lib_8h_a7384b64b2c43d4ee3bfac743df43509e} 
+\index{Che\+Bob\+Lib.\+h@{Che\+Bob\+Lib.\+h}!Draw\+F\+Wheel@{Draw\+F\+Wheel}}
+\index{Draw\+F\+Wheel@{Draw\+F\+Wheel}!Che\+Bob\+Lib.\+h@{Che\+Bob\+Lib.\+h}}
+\subsubsection{\texorpdfstring{Draw\+F\+Wheel()}{DrawFWheel()}}
+{\footnotesize\ttfamily void Draw\+F\+Wheel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{z,  }\item[{double}]{a }\end{DoxyParamCaption})}
+
+
+
+Должна рисовать переднее колесо для функдии \char`\"{}\+Draw\+Car\char`\"{}. 
+
+\begin{DoxyWarning}{Предупреждения}
+Функция в доработке 
+\end{DoxyWarning}
+\hypertarget{_che_bob_lib_8h_a219b2f99ea5afa7b8172f5edd1ce0f44}{}\label{_che_bob_lib_8h_a219b2f99ea5afa7b8172f5edd1ce0f44} 
+\index{Che\+Bob\+Lib.\+h@{Che\+Bob\+Lib.\+h}!Draw\+House@{Draw\+House}}
+\index{Draw\+House@{Draw\+House}!Che\+Bob\+Lib.\+h@{Che\+Bob\+Lib.\+h}}
+\subsubsection{\texorpdfstring{Draw\+House()}{DrawHouse()}}
+{\footnotesize\ttfamily void Draw\+House (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{z,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{c,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{d,  }\item[{double}]{n,  }\item[{int}]{b,  }\item[{double}]{h }\end{DoxyParamCaption})}
+
+
+
+Рисует дом с изменением цвета, размера и высоты. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & координата по горизонтали \\
+\hline
+{\em y} & координата по вертикали \\
+\hline
+{\em z} & размер (единица -\/ стандартный размер, какое число вводите, ВО столько раз увеличивается размер) \\
+\hline
+{\em c} & цвет блока дома (вводите какую-\/нибудь фигню наподобие \char`\"{}\+T\+X\+\_\+\+Y\+E\+L\+L\+O\+W\char`\"{} или \char`\"{}\+R\+G\+B(255, 127, 0)\char`\"{}) \\
+\hline
+{\em d} & цвет крыши дома (вводите какую-\/нибудь фигню наподобие \char`\"{}\+T\+X\+\_\+\+Y\+E\+L\+L\+O\+W\char`\"{} или \char`\"{}\+R\+G\+B(255, 127, 0)\char`\"{}) \\
+\hline
+{\em n} & расстояние, на которое открывается дверь(единица -\/ дверь открыта, чем ближе к нулю, тем ,ольше закрыта) \\
+\hline
+{\em b} & свет в окне (только 0 или 1, 0 -\/ выключен, 1 -\/ включён) \\
+\hline
+{\em h} & высота (единица -\/ стандартная высота, какое число вводите, ВО столько раз увеличивается высота)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Предупреждения}
+если сделать параметр z/n/h слишком большим, то будет фигня (? ?° ?? ?°)???? 
+
+если сделать параметр x/y слишком большим, то дома не будет (?\+\_\+?)
+\end{DoxyWarning}
+
+\begin{DoxyCode}
+\hyperlink{_che_bob_lib_8h_a219b2f99ea5afa7b8172f5edd1ce0f44}{DrawHouse}(600, 300, 1, RGB(255, 127, 0), RGB(200, 0, 0), 0.25, 1, 1);
+\textcolor{comment}{//Я - дом}
+\end{DoxyCode}
+ \hypertarget{_che_bob_lib_8h_a99232022ccb12c46d58a21853cd47936}{}\label{_che_bob_lib_8h_a99232022ccb12c46d58a21853cd47936} 
+\index{Che\+Bob\+Lib.\+h@{Che\+Bob\+Lib.\+h}!Draw\+Road@{Draw\+Road}}
+\index{Draw\+Road@{Draw\+Road}!Che\+Bob\+Lib.\+h@{Che\+Bob\+Lib.\+h}}
+\subsubsection{\texorpdfstring{Draw\+Road()}{DrawRoad()}}
+{\footnotesize\ttfamily void Draw\+Road (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{z,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{c,  }\item[{double}]{n,  }\item[{double}]{l }\end{DoxyParamCaption})}
+
+
+
+Рисует дорогу с изменением длины, положения полос и высоты. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & координата по горизонтали \\
+\hline
+{\em y} & координата по вертикали \\
+\hline
+{\em z} & размер (единица -\/ стандартный размер, какое число вводите, ВО столько раз увеличивается размер) \\
+\hline
+{\em c} & цвет полосок (вводите какую-\/нибудь фигню наподобие \char`\"{}\+T\+X\+\_\+\+Y\+E\+L\+L\+O\+W\char`\"{} или \char`\"{}\+R\+G\+B(255, 127, 0)\char`\"{}) \\
+\hline
+{\em n} & расстояние, на которое смещаются полоски (вперёд -\/ положительное число, назад -\/ отрицательное) в пикселах \\
+\hline
+{\em l} & добавочная длина дороги (увеличивается длина дороги вместе с количеством полосок) в пикселах\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Предупреждения}
+если сделать параметр z слишком большим, то будет $^\wedge$0$^\wedge$ (? ?° ??? ?°)? 
+
+если сделать параметр x/y слишком большим, то дороги не будет \mbox{[}??\$??(?? ?° ?? ?°??)??\$??\mbox{]}
+\end{DoxyWarning}
+
+\begin{DoxyCode}
+\hyperlink{_che_bob_lib_8h_a99232022ccb12c46d58a21853cd47936}{DrawRoad}(600, 300, 1, TX\_WHITE, 0, 2);
+\textcolor{comment}{//Я - дорога}
+\end{DoxyCode}
+ \hypertarget{_che_bob_lib_8h_a585f8bcec3e6095f6ebc437a96849e98}{}\label{_che_bob_lib_8h_a585f8bcec3e6095f6ebc437a96849e98} 
+\index{Che\+Bob\+Lib.\+h@{Che\+Bob\+Lib.\+h}!Draw\+Sun@{Draw\+Sun}}
+\index{Draw\+Sun@{Draw\+Sun}!Che\+Bob\+Lib.\+h@{Che\+Bob\+Lib.\+h}}
+\subsubsection{\texorpdfstring{Draw\+Sun()}{DrawSun()}}
+{\footnotesize\ttfamily void Draw\+Sun (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{z,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{c,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{d,  }\item[{double}]{n,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+
+
+Рисует упоротое солнце с изменением цвета, размера и высоты. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & координата по горизонтали \\
+\hline
+{\em y} & координата по вертикали \\
+\hline
+{\em z} & размер (единица -\/ стандартный размер, какое число вводите, ВО столько раз увеличивается размер) \\
+\hline
+{\em c} & цвет \char`\"{}круга\char`\"{} солнца (вводите какую-\/нибудь фигню наподобие \char`\"{}\+T\+X\+\_\+\+Y\+E\+L\+L\+O\+W\char`\"{} или \char`\"{}\+R\+G\+B(255, 127, 0)\char`\"{}) \\
+\hline
+{\em d} & цвет глаз солнца (вводите какую-\/нибудь фигню наподобие \char`\"{}\+T\+X\+\_\+\+Y\+E\+L\+L\+O\+W\char`\"{} или \char`\"{}\+R\+G\+B(255, 127, 0)\char`\"{}) \\
+\hline
+{\em n} & расстояние, на которое открывается рот (единица -\/ рот открыт, какое число вводите, ВО столько раз увеличивается) \\
+\hline
+{\em b} & моргание глаз (только 0, 1, 2 или 3. 0 -\/ оба закрыты, 1 -\/ оба открыты, 2 -\/ левый глаз открыт, правый -\/ закрыт, 4 -\/ наоборот.)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Предупреждения}
+если сделать параметр z/n/h слишком большим, то будет нечто ? ?° ?? ?° ? 
+
+если сделать параметр x/y слишком большим, то солнца не будет ( ?°( ?° ??( ?° ?? ?°)? ?°) ?°)
+\end{DoxyWarning}
+
+\begin{DoxyCode}
+\hyperlink{_che_bob_lib_8h_a585f8bcec3e6095f6ebc437a96849e98}{DrawSun}(600, 300, 1, TX\_YELLOW, TX\_LIGHTCYAN, 1, 2);
+\textcolor{comment}{//Я - упоротое солнце}
+\end{DoxyCode}
+ 

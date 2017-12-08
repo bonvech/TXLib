@@ -1,0 +1,200 @@
+\hypertarget{_andrew_8h}{}\section{Файл Andrew.\+h}
+\label{_andrew_8h}\index{Andrew.\+h@{Andrew.\+h}}
+
+
+Моя собственность  
+
+
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_andrew_8h_a23785d6b415dd05ebe555d655087a044}{draw\+Moon} (int x, int y, double size, C\+O\+L\+O\+R\+R\+EF color1, C\+O\+L\+O\+R\+R\+EF color2)
+\begin{DoxyCompactList}\small\item\em Рисует луну \end{DoxyCompactList}\item 
+void \hyperlink{_andrew_8h_a773ba6b094299775ad510fc0d12d7cbf}{draw\+Sun} (int x, int y, double size, C\+O\+L\+O\+R\+R\+EF color)
+\begin{DoxyCompactList}\small\item\em Рисует солнце \end{DoxyCompactList}\item 
+void \hyperlink{_andrew_8h_a54d8f81a1714bdc0bcfc7d56778773d8}{draw\+Star} (int x, int y, double size, C\+O\+L\+O\+R\+R\+EF color)
+\begin{DoxyCompactList}\small\item\em Рисует звезду \end{DoxyCompactList}\item 
+void \hyperlink{_andrew_8h_a161bec3d7ed782913b316555bef3d171}{draw\+House} (int x, int y, double size, C\+O\+L\+O\+R\+R\+EF color1, C\+O\+L\+O\+R\+R\+EF color2, C\+O\+L\+O\+R\+R\+EF color3, C\+O\+L\+O\+R\+R\+EF color4)
+\begin{DoxyCompactList}\small\item\em Рисует дом \end{DoxyCompactList}\item 
+void \hyperlink{_andrew_8h_a953a81e5556e1a7c6fc398de2776b2f8}{draw\+Car} (int x, int y, double size, C\+O\+L\+O\+R\+R\+EF color1, C\+O\+L\+O\+R\+R\+EF color2, C\+O\+L\+O\+R\+R\+EF color3, C\+O\+L\+O\+R\+R\+EF color4)
+\begin{DoxyCompactList}\small\item\em Рисует машину \end{DoxyCompactList}\item 
+void \hyperlink{_andrew_8h_aa0cdecee4f0a94d680b484b3c1afd178}{draw4elovek2} (int x, int y, double size, C\+O\+L\+O\+R\+R\+EF color)
+\begin{DoxyCompactList}\small\item\em Рисует человека \end{DoxyCompactList}\item 
+\hypertarget{_andrew_8h_ad58ab5eb45d8ac39814d87a236226618}{}\label{_andrew_8h_ad58ab5eb45d8ac39814d87a236226618} 
+{\bfseries tx\+Set\+Fill\+Color} (color2)
+\item 
+\hypertarget{_andrew_8h_ac0b6936f7ee66f451978bba3391b5ba8}{}\label{_andrew_8h_ac0b6936f7ee66f451978bba3391b5ba8} 
+{\bfseries tx\+Polygon} (house, 7)
+\item 
+\hypertarget{_andrew_8h_a67ae78a9283e78819bfd9988be3351a0}{}\label{_andrew_8h_a67ae78a9283e78819bfd9988be3351a0} 
+{\bfseries tx\+Set\+Color} (color3, 3 $\ast$size)
+\item 
+\hypertarget{_andrew_8h_a768bdbbd508d609a3da1e1fdab3d77e1}{}\label{_andrew_8h_a768bdbbd508d609a3da1e1fdab3d77e1} 
+{\bfseries tx\+Set\+Fill\+Color} (color4)
+\item 
+\hypertarget{_andrew_8h_ab2fdd1e1ab9d66bf62a87d8806eab927}{}\label{_andrew_8h_ab2fdd1e1ab9d66bf62a87d8806eab927} 
+{\bfseries tx\+Circle} (x, y+100 $\ast$size, 20 $\ast$size)
+\item 
+\hypertarget{_andrew_8h_ab9927e5777ebb1080309fc839859544b}{}\label{_andrew_8h_ab9927e5777ebb1080309fc839859544b} 
+{\bfseries tx\+Line} (x, y+80 $\ast$size, x, y+120 $\ast$size)
+\item 
+\hypertarget{_andrew_8h_a69d744f617aa90795509bf3fa2bd9d19}{}\label{_andrew_8h_a69d744f617aa90795509bf3fa2bd9d19} 
+{\bfseries tx\+Line} (x-\/20 $\ast$size, y+100 $\ast$size, x+20 $\ast$size, y+100 $\ast$size)
+\end{DoxyCompactItemize}
+\subsection*{Переменные}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_andrew_8h_aa68c09306d88611c149e18ca89f2b5c8}{}\label{_andrew_8h_aa68c09306d88611c149e18ca89f2b5c8} 
+P\+O\+I\+NT {\bfseries house} \mbox{[}7\mbox{]} = \{\{x+50$\ast$size,y+50$\ast$size\},\{x+50$\ast$size,y+150$\ast$size\},\{x-\/50$\ast$size,y+150$\ast$size\},\{x-\/50$\ast$size,y+50$\ast$size\},\{x+50$\ast$size,y+50$\ast$size\},\{x,y\},\{x-\/50$\ast$size,y+50$\ast$size\}\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Моя собственность 
+
+\begin{DoxyWarning}{Предупреждения}
+Работает только с библиотекой T\+X\+Lib Описание функций 
+\end{DoxyWarning}
+
+
+\subsection{Функции}
+\hypertarget{_andrew_8h_aa0cdecee4f0a94d680b484b3c1afd178}{}\label{_andrew_8h_aa0cdecee4f0a94d680b484b3c1afd178} 
+\index{Andrew.\+h@{Andrew.\+h}!draw4elovek2@{draw4elovek2}}
+\index{draw4elovek2@{draw4elovek2}!Andrew.\+h@{Andrew.\+h}}
+\subsubsection{\texorpdfstring{draw4elovek2()}{draw4elovek2()}}
+{\footnotesize\ttfamily void draw4elovek2 (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{size,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color }\end{DoxyParamCaption})}
+
+
+
+Рисует человека 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & -\/ координата по оси х \\
+\hline
+{\em y} & -\/ координата по оси y \\
+\hline
+{\em size-\/} & коэфицент размера \\
+\hline
+{\em color} & -\/ цвет человека \\
+\hline
+\end{DoxyParams}
+\hypertarget{_andrew_8h_a953a81e5556e1a7c6fc398de2776b2f8}{}\label{_andrew_8h_a953a81e5556e1a7c6fc398de2776b2f8} 
+\index{Andrew.\+h@{Andrew.\+h}!draw\+Car@{draw\+Car}}
+\index{draw\+Car@{draw\+Car}!Andrew.\+h@{Andrew.\+h}}
+\subsubsection{\texorpdfstring{draw\+Car()}{drawCar()}}
+{\footnotesize\ttfamily void draw\+Car (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{size,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color1,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color2,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color3,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color4 }\end{DoxyParamCaption})}
+
+
+
+Рисует машину 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & -\/ координата по оси х \\
+\hline
+{\em y} & -\/ координата по оси y \\
+\hline
+{\em size-\/} & коэфицент размера \\
+\hline
+{\em color1} & -\/ цвет \\
+\hline
+{\em color2} & -\/ цвет \\
+\hline
+{\em color3} & -\/ цвет \\
+\hline
+{\em color4} & -\/ цвет \\
+\hline
+\end{DoxyParams}
+\hypertarget{_andrew_8h_a161bec3d7ed782913b316555bef3d171}{}\label{_andrew_8h_a161bec3d7ed782913b316555bef3d171} 
+\index{Andrew.\+h@{Andrew.\+h}!draw\+House@{draw\+House}}
+\index{draw\+House@{draw\+House}!Andrew.\+h@{Andrew.\+h}}
+\subsubsection{\texorpdfstring{draw\+House()}{drawHouse()}}
+{\footnotesize\ttfamily void draw\+House (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{size,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color1,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color2,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color3,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color4 }\end{DoxyParamCaption})}
+
+
+
+Рисует дом 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & -\/ координата по оси х \\
+\hline
+{\em y} & -\/ координата по оси y \\
+\hline
+{\em size-\/} & коэфицент размера \\
+\hline
+{\em color1} & -\/ цвет \\
+\hline
+{\em color2} & -\/ цвет \\
+\hline
+{\em color3} & -\/ цвет \\
+\hline
+{\em color4} & -\/ цвет \\
+\hline
+\end{DoxyParams}
+\hypertarget{_andrew_8h_a23785d6b415dd05ebe555d655087a044}{}\label{_andrew_8h_a23785d6b415dd05ebe555d655087a044} 
+\index{Andrew.\+h@{Andrew.\+h}!draw\+Moon@{draw\+Moon}}
+\index{draw\+Moon@{draw\+Moon}!Andrew.\+h@{Andrew.\+h}}
+\subsubsection{\texorpdfstring{draw\+Moon()}{drawMoon()}}
+{\footnotesize\ttfamily void draw\+Moon (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{size,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color1,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color2 }\end{DoxyParamCaption})}
+
+
+
+Рисует луну 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & -\/ координата по оси х \\
+\hline
+{\em y} & -\/ координата по оси y \\
+\hline
+{\em size-\/} & коэфицент размера \\
+\hline
+{\em color1} & -\/ цвет большого круга луны \\
+\hline
+{\em color2} & -\/ цвет маленьких кругов луны \\
+\hline
+\end{DoxyParams}
+\hypertarget{_andrew_8h_a54d8f81a1714bdc0bcfc7d56778773d8}{}\label{_andrew_8h_a54d8f81a1714bdc0bcfc7d56778773d8} 
+\index{Andrew.\+h@{Andrew.\+h}!draw\+Star@{draw\+Star}}
+\index{draw\+Star@{draw\+Star}!Andrew.\+h@{Andrew.\+h}}
+\subsubsection{\texorpdfstring{draw\+Star()}{drawStar()}}
+{\footnotesize\ttfamily void draw\+Star (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{size,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color }\end{DoxyParamCaption})}
+
+
+
+Рисует звезду 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & -\/ координата по оси х \\
+\hline
+{\em y} & -\/ координата по оси y \\
+\hline
+{\em size-\/} & коэфицент размера \\
+\hline
+{\em color} & -\/ цвет звезды \\
+\hline
+\end{DoxyParams}
+\hypertarget{_andrew_8h_a773ba6b094299775ad510fc0d12d7cbf}{}\label{_andrew_8h_a773ba6b094299775ad510fc0d12d7cbf} 
+\index{Andrew.\+h@{Andrew.\+h}!draw\+Sun@{draw\+Sun}}
+\index{draw\+Sun@{draw\+Sun}!Andrew.\+h@{Andrew.\+h}}
+\subsubsection{\texorpdfstring{draw\+Sun()}{drawSun()}}
+{\footnotesize\ttfamily void draw\+Sun (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{size,  }\item[{C\+O\+L\+O\+R\+R\+EF}]{color }\end{DoxyParamCaption})}
+
+
+
+Рисует солнце 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & -\/ координата по оси х \\
+\hline
+{\em y} & -\/ координата по оси y \\
+\hline
+{\em size-\/} & коэфицент размера \\
+\hline
+{\em color} & -\/ цвет солнца \\
+\hline
+\end{DoxyParams}
