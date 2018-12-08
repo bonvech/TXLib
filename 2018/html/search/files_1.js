@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['leyzerovichlib_2eh',['LeyzerovichLib.h',['../_leyzerovich_lib_8h.html',1,'']]]
+  ['karatyginlib_2eh',['KaratyginLib.h',['../_karatygin_lib_8h.html',1,'']]],
+  ['kmynlib_2eh',['KmynLib.h',['../_kmyn_lib_8h.html',1,'']]]
 ];
