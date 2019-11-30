@@ -4,7 +4,6 @@
 \author Ashurkov Arseniy
 */
 
-void draw_chelik(int x, int y, double size, COLORREF color, int rleg, int rarm);
 /**
 \param  x- положение персонажа по горизонтальной оси
 \param  y- положение персонажа по вертикальной оси
@@ -13,17 +12,19 @@ void draw_chelik(int x, int y, double size, COLORREF color, int rleg, int rarm);
 \param rleg- поднятие правой ноги (не больше 100)
 \param rarm- поднятие правой ноги (не больше 100)
 */
-void draw_snowman(int x, int y, double size, COLORREF color,int high1, int high2, int high3);
+void draw_chelik(int x, int y, double size, COLORREF color, int rleg, int rarm);
+
 /**
 \param  x- положение персонажа по горизонтальной оси
 \param  y- положение персонажа по вертикальной оси
 \param size- размер персонажа
 \param color- цвет персонажа
 \param high1- высота первого шара (первый самый верхний)
-\param high1- высота второго шара ( средний шар)
-\param high1- высота третьего шара (самый нижний)
+\param high2- высота второго шара ( средний шар)
+\param high3- высота третьего шара (самый нижний)
 */
-void draw_plane(int x, int y, double size, COLORREF color, int luchok);
+void draw_snowman(int x, int y, double size, COLORREF color,int high1, int high2, int high3);
+
 /**
 \param  x- положение персонажа по горизонтальной оси
 \param  y- положение персонажа по вертикальной оси
@@ -33,6 +34,8 @@ void draw_plane(int x, int y, double size, COLORREF color, int luchok);
 
 */
 //---------------------------------------------------------------------------------------------------------------------------------------
+void draw_plane(int x, int y, double size, COLORREF color, int luchok);
+
 void draw_snowman(int x, int y, double size, COLORREF color,int high3, int high2, int high1)      // high1 high2 high3 высота первого, второго, и третьего шара соответственно
 {
 txSetFillColor (color);
