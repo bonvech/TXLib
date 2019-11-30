@@ -6,27 +6,22 @@
  */
 
 /**
-*\brief Рисование фона.\n
-*\Два прямоугольника залитые разными цветами, первый небо, второй земля.
-
-*\param color отвечает за цвет земли
- \param scale надо написать, что это за параметр
-*\param color2 отвечает за цвет неба
-
-*> Пример использования:
+ *\brief Рисование фона.\n
+ * Два прямоугольника залитые разными цветами, первый небо, второй земля.
+ *\param color отвечает за цвет земли
+ *\param color2 отвечает за цвет неба
+ *
+ *> Пример использования:
  *\code
     draw_fon(RGB(57,53,40),RGB(25,24,255));
  *\endcode
-
-*/
-void draw_fon(COLORREF color,double scale,COLORREF color2);
+ */
+void draw_fon(COLORREF color,COLORREF color2);
 
 /**
 *\brief Рисование горы.\n
-*\Два многоугольника залитые разными цветами, первый снег, второй гора.
-
+* Два многоугольника залитые разными цветами, первый снег, второй гора.
 *\param x x перемещение горы по оси x
-
 *\param y y перемещение горы по оси y
 
 *\param color цвет горы
@@ -53,15 +48,13 @@ void draw_gora(int x, int y,COLORREF color,double scale);
 
 *\param scale размер облака и толщина линии, которой она нарисованна
 
-*\param dir отражение по вертикали
-
 *> Пример использования:
  *\code
-    draw_cloud(x,-190,RGB(132,144,250),0.8,-1.);
+    draw_cloud(x,-190,RGB(132,144,250),0.8);
  *\endcode
 
 */
-void draw_cloud(int x, int y, COLORREF color,double scale,int dir);
+void draw_cloud(int x, int y, COLORREF color,double scale);
 
 /**
 *\brief Рисование хорю-дзи
@@ -82,7 +75,7 @@ void draw_cloud(int x, int y, COLORREF color,double scale,int dir);
 */
 void draw_horyudzi(int x, int y, COLORREF color,double scale);
 
-void draw_fon(COLORREF color,double scale,COLORREF color2)
+void draw_fon(COLORREF color,COLORREF color2)
 {
     txSetFillColor(color);
     txSetColor(TX_BLACK,10*scale);

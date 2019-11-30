@@ -5,17 +5,17 @@
 /**
 \brief IZBUSHKA
 \details основные функции
-\param x перемещение по оси x
-\param y перемещение по оси y
-\param double scale размер персонажа
-\param COLORREF color цвет персонажа
-\param COLORREF legs цвет ног
-\param up_teeth высота подъёма верхней челюсти
-\param down_teeth высота подъёма нижней челюсти
-\param izb_side положение избушки(вверх ногами/вниз)
-\param teeth наличие зубов у избушки
+\param x            перемещение по оси x
+\param y            перемещение по оси y
+\param scale        размер персонажа
+\param color        цвет персонажа
+\param legs         цвет ног
+\param up_teeth     высота подъёма верхней челюсти
+\param down_teeth   высота подъёма нижней челюсти
+\param izb_side     положение избушки(вверх ногами/вниз)
+\param teeth        наличие зубов у избушки
 \param izb_rightleg положение правой ноги избушки
-\param izb_leftleg положение левой ноги избушки
+\param izb_leftleg  положение левой ноги избушки
 \code
     draw_izbushka(300,350,0.8,TX_RED,TX_BLUE,10,10,1,1,50,50);
 \endcode
@@ -24,18 +24,18 @@ void draw_izbushka( int x, int y,double scale, COLORREF color, COLORREF legs,int
 /**
 \brief CHELOVEK
 \details основные функции
-\param x          перемещение по оси x
-\param y          перемещение по оси y
-\param scale      размер персонажа
-\param colorHead  цвет головы человека
-\param colorBody  цвет тела человека
-\param legs цвет  ног
-\param colorEyes  цвет глаз
-\param Right_leg  положение правой ноги человека
-\param Left_leg   положение левой ноги человека
-\param chel_side  положение человека(вверх ногами/вниз)
-\param head       наличие головы у человека
-\param backColor  цвет контура
+\param x         перемещение по оси x
+\param y         перемещение по оси y
+\param scale     размер персонажа
+\param colorHead цвет головы человека
+\param colorBody цвет тела человека
+\param legs цвет ног
+\param colorEyes цвет глаз
+\param Right_leg положение правой ноги человека
+\param Left_leg  положение левой ноги человека
+\param chel_side положение человека(вверх ногами/вниз)
+\param head      наличие головы у человека
+\param backColor цвет контура
 \code
     draw_chlovek(700,350,0.5,TX_YELLOW,TX_GREEN,TX_GREEN,TX_RED,13,13,1,1, TX_BLACK);
 \endcode
@@ -44,15 +44,15 @@ void draw_chlovek(int x, int y,double scale,COLORREF colorHead,COLORREF colorBod
 /**
 \brief ROBOT
 \details основные функции
-\param x перемещение по оси x
-\param y перемещение по оси y
-\param double scale размер персонажа
-\param COLORREF color цвет персонажа
-\param COLORREF legs цвет ног
+\param x          перемещение по оси x
+\param y          перемещение по оси y
+\param scale      размер персонажа
+\param color      цвет персонажа
+\param legs       цвет ног
 \param Rrobot_leg длина правой ноги робота
 \param Lrobot_leg длина левой ноги робота
-\param rob_side положение робота(вверх ногами/вниз)
-\param leg наличие ног у робота
+\param rob_side   положение робота(вверх ногами/вниз)
+\param leg        наличие ног у робота
 \code
     draw_robot(1075,350,0.4,TX_PINK,TX_GREEN,50,50,-1,1);
 \endcode
@@ -61,15 +61,15 @@ void draw_robot(int x,int y,double scale, COLORREF color, COLORREF legs,int Rrob
 /**
 \brief LAMP
 \details основные функции
-\param x перемещение по оси x
-\param y перемещение по оси y
-\param double scale размер персонажа
-\param COLORREF color цвет персонажа
-\param COLORREF legs цвет ног
-\param Side положение персонаже(смотрит влево/вправо)
-\param UpDown высота подставки ножки
+\param x         перемещение по оси x
+\param y         перемещение по оси y
+\param scale     размер персонажа
+\param color     цвет персонажа
+\param legs      цвет ног
+\param Side      положение персонаже(смотрит влево/вправо)
+\param UpDown    высота подставки ножки
 \param lamp_side положение лампы(вверх ногами/вниз)
-\param light наличие лампочки
+\param light     наличие лампочки
 \code
     draw_lamp(1325,425,0.7,TX_ORANGE,TX_RED,10,10,-1,1);
 \endcode
@@ -78,15 +78,15 @@ void draw_lamp(int x,int y, double scale,COLORREF color, COLORREF legs,int Side,
 /**
 \brief VIRUS
 \details основные функции
-\param x перемещение по оси x
-\param y перемещение по оси y
-\param double scale размер персонажа
-\param COLORREF color цвет персонажа
-\param COLORREF legs цвет ног
+\param x              перемещение по оси x
+\param y              перемещение по оси y
+\param scale          размер персонажа
+\param color          цвет персонажа
+\param legs           цвет ног
 \param Rdownvirus_leg положение правой ноги
 \param Ldownvirus_leg положение левой ноги
-\param virus_side положение вируса(вверх ногами/вниз)
-\param  v_head наличие головы у вируса
+\param virus_side     положение вируса(вверх ногами/вниз)
+\param v_head         наличие головы у вируса
 \code
     draw_lamp(1325,425,0.7,TX_ORANGE,TX_RED,10,10,-1,1);
 \endcode
