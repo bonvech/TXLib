@@ -20,11 +20,11 @@
 ///    \warning Параметр zombie от 0 до 4. Параметр xmirror равен либо 1 либо -1
 ///
 ///    \code
-///        xplain=100;
-///        colorplain=RGB(rand()%256,rand()%256,rand()%256);
-///        color2plain=RGB(rand()%256,rand()%256,rand()%256);
-///        zombieplain=rand()%5;
-///        xmirrorplain=rand()%2;
+///        double xplain=100;
+///        COLORREF colorplain=RGB(rand()%256,rand()%256,rand()%256);
+///        COLORREF color2plain=RGB(rand()%256,rand()%256,rand()%256);
+///        int zombieplain=rand()%5;
+///        int xmirrorplain=rand()%2;
 ///        if (xmirrorplain==0)
 ///        {
 ///            xmirrorplain=-1;
@@ -95,9 +95,9 @@ void DrawSky(double x, double y,double scale, COLORREF color, int xmirror, int f
 ///     \warning Параметр dim от 0 до 3
 ///
 ///     \code
-///        dimfaer=rand()%4;
-///        colorfaer=RGB(rand()%256,rand()%256,rand()%256);
-///        xfaer=100;
+///        int dimfaer=rand()%4;
+///        COLORREF colorfaer=RGB(rand()%256,rand()%256,rand()%256);
+///        double xfaer=100;
 ///
 ///        DrawFaer(xfaer, 100, 1, colorfaer, dimfaer);
 ///     \endcode
@@ -123,20 +123,20 @@ void DrawFaer(double x, double y,double scale,COLORREF color,int dim);
 ///     \warning Параметр xmirror и ymirror равен либо 1 либо -1. Man бинарный параметр, равен либо 1 либо 0
 ///
 ///     \code
-///         xcar=100;
-///         colorcar=RGB(rand()%256,rand()%256,rand()%256);
-///         color2car=RGB(rand()%256,rand()%256,rand()%256);
-///         xmirrorcar=rand()%2;
+///         double xcar=100;
+///         COLORREF colorcar=RGB(rand()%256,rand()%256,rand()%256);
+///         COLORREF color2car=RGB(rand()%256,rand()%256,rand()%256);
+///         int xmirrorcar=rand()%2;
 ///         if (xmirrorcar==0)
 ///         {
 ///         xmirrorcar=-1;
 ///         }
-///         ymirrorcar=rand()%2;
+///         int ymirrorcar=rand()%2;
 ///         if (ymirrorcar==0)
 ///         {
 ///         ymirrorcar=-1;
 ///         }
-///         mancar=rand()%2;
+///         int mancar=rand()%2;
 ///
 ///         DrawCar(xcar, 200, 1, colorcar, color2car, mancar, xmirrorcar, ymirrorcar);
 ///     \endcode
@@ -172,13 +172,13 @@ void DrawCar(double x, double y, double scale, COLORREF color, COLORREF color2, 
 ///           зомби с кровавыми потеками на губах.
 ///
 ///     \code
-///         xman=200*i+100;
-///         colorman=RGB(rand()%256,rand()%256,rand()%256);
-///         zombieman=rand()%4;
-///         leftlegangleman=rand()%90;
-///         rightlegangleman=rand()%90;
-///         leftarmangleman=rand()%90;
-///         rightarmangleman=rand()%90;
+///         double xman=100;
+///         COLORREF colorman=RGB(rand()%256,rand()%256,rand()%256);
+///         int zombieman=rand()%4;
+///         int leftlegangleman=rand()%90;
+///         int rightlegangleman=rand()%90;
+///         int leftarmangleman=rand()%90;
+///         int rightarmangleman=rand()%90;
 ///
 ///         DrawMan(xman, yman, scaleman, colorman, zombieman, leftlegangleman, rightlegangleman, leftarmangleman, rightarmangleman);
 ///     \endcode

@@ -3,8 +3,14 @@
 
 
 /*!
-    rocks -  функция рисует камень.
-    \param int x, int y - координаты фигуры. COLORREF color - цвет. int type = 1/2/3 - тип камня, int count - количество камней, double length, double size - размер в высоту и ширину.
+    rocks - the  function draws stones .
+    \param int x
+    \param int y - coordinates of the figure
+    \param COLORREF color - color
+    \param int type = 1/2/3 - type of stone
+    \param int count - number of stones
+    \param double length  - size in height
+    \param double size - size in width.
 */
 void rocks(int x, int y,int type,COLORREF color, int count, double length, double size){
     txSetColor(color);
@@ -38,8 +44,14 @@ void rocks(int x, int y,int type,COLORREF color, int count, double length, doubl
 
 
 /*!
-    coral -  функция рисует многоэтажный коралл.
-    \param int x, int y - координаты фигуры. COLORREF color - цвет.int n - количество этажей, int shift - смещение в сторону, double length, double width - размер в высоту и ширину.
+    coral -  the function draws multi-floor coral.
+    \param int x -shape coordinates
+    \param int y - shape coordinates
+    \param COLORREF color - color
+    \param int n - number of floors
+    \param int shift -shift offset to the side
+    \param double length-size in height
+    \param double width -size in width.
 */
 
 void coral(int x, int y1, int n,COLORREF color,int shift,double width,double lenght){
@@ -57,10 +69,14 @@ void coral(int x, int y1, int n,COLORREF color,int shift,double width,double len
 }
 
 /*!
-algae -  функция рисует водоросли.
-    \param  x - координаты фигуры
-    \param  y - координаты фигуры.
-    \param COLORREF color - цвет. int n - количество водорослей, int direction - направление, double length, double size - размер в высоту и ширину
+algae - the function draws algae  .
+    \param int x -shape coordinates
+    \param int y -shape coordinates
+    \param COLORREF color - color
+    \param int n -amount of algae
+    \param int direction - direction
+    \param double length -size in height
+    \param double size - size in width.
 */
 
 void algae(int x, int y,int shift,COLORREF color, int count,int direction, double length, double size){
@@ -87,8 +103,15 @@ void algae(int x, int y,int shift,COLORREF color, int count,int direction, doubl
 }
 
 /*!
-fish - функия рисует рыбу.
-    \param int x, int y - координаты фигуры. double n -  размер. COLORREF color - цвет. int tail - увеличение\уменьшение хвоста. int eyes (1/0) - наличие глаза. int direction - направление. int gills - количество жабр
+fish - the function draws fish.
+    \param int x -shape coordinates
+    \param int y - shape coordinates
+    \param double n -size
+    \param COLORREF color -color
+    \param int tail - increase\decrease of the tail
+    \param int eyes (1/0) - having an eye
+    \param int direction - direction
+    \param int gills - number of gills
 */
 
 void fish(int x,int y,double n, COLORREF color,int tail,int eyes,int direction, int gills){
@@ -116,8 +139,14 @@ void fish(int x,int y,double n, COLORREF color,int tail,int eyes,int direction, 
 }
 
 /*!
-shark - функия рисует акулу.
-    \param  int x, int y - координаты фигуры. double n -  размер. COLORREF color - цвет. int eyes (1/0) - наличие глаза. int direction - направление. int gills - количество жабр
+shark - the function draws shark.
+    \param  int x-shape coordinates
+    \param int y - shape coordinates
+    \param double n - size
+    \param COLORREF color -color
+    \param int eyes (1/0) - having an eye
+    \param int direction - direction
+    \param int gills - number of gills
 */
 
 void shark(int x,int y,double n, COLORREF color,int eyes,int direction, int gills){

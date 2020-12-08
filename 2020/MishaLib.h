@@ -52,6 +52,8 @@ void DrawCircle(int x,int y, double scale, COLORREF color, int turn, int mirror,
     */
 void DrawCar(int x,int y, double scale, COLORREF color, int turn, int mirror, int border );
 
+        DrawCar(900, 600, 1, TX_RED, 1, 0, 1);
+    }
 void DrawHome(int x,int y, double scale, COLORREF color, int turn, int mirror,  int border )
 {
      //домик

@@ -29,7 +29,7 @@
  //! @ingroup Drawing
 //! @brief   Рисует смайлик Анкапа.
 //!
-//! @param   x    X-координата на холсте.
+//! @param   X    X-координата на холсте.
 //! @param   Y    Y-координата на холсте.
 //! @param   Scale    Размер персонажа на холсте.
 //! @param   Color    Частичный цвет персонажа.
@@ -43,10 +43,10 @@
 //!
 //! @endcode
 //}----------------------------------------------------------------------------------------------------------------
-void DrawAncap ( int x, int y, double scale, COLORREF color,double a);
+void DrawAncap ( int x, int y,double scale, COLORREF color,double a);
 
 //{---------------------------------------------------------------------------------------------------------------------
-//! @ingroup Drawing
+ //! @ingroup Drawing
 //! @brief   Рисует Машину.
 //!
 //! @param   X    X-координата на холсте.
@@ -66,7 +66,6 @@ void DrawAncap ( int x, int y, double scale, COLORREF color,double a);
 void DrawCar (int x, int y,double scale, COLORREF color,double a);
 
 
-//////////////////////////////////////////////////////////
 void DrawAncap (int x,int y,double scale, COLORREF color,double a)
 {
     txSetColor(TX_BLACK,5);

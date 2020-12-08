@@ -18,7 +18,7 @@
  \param   color   цвет вертолёта (кроме кабины)
  \param   dcolor  цвет кабины (окна) вертолёта
  \param   gear    Шасси убираются от 0 до 27
- \param   lopasti лопасти уменьшаются от 0 до -99 (если параметр zerkalo = 1) / уменьшаются от 0 до 99 (если параметр zerkalo = -1)
+ \param   lopasti лопасти уменьшаются от 0 до -99
  \param   zerkalo (-1) - вертолёт смотрит влево,    1 - вправо
  \warning лопасти вертолёта ВСЕГДА черные!!!
 
@@ -36,12 +36,12 @@ void DrawHelicopter(int x, int y, double scale, COLORREF color, COLORREF dcolor,
  \param   scale   размер
  \param   color   цвет самолёта (кроме кабины)
  \param   dcolor  цвет кабины (окна) самолёта
- \param   plami   пламя увеличивается от 80 до -бесконечности (если zerkalo = 1) / увеличивается от -80 до +бесконечности (если zerkalo = -1)
+ \param   plami   пламя увеличивается от 80 до -бесконечности
  \param   zerkalo (-1) - самолёт смотрит влево,    1 - вправо
  \warning цвет пламени НЕ меняется!!!
 
  \code
- DrawPlane(50, 425, 0.5, TX_GRAY, RGB(0,127,157), 80, -1);
+ DrawPlane(50, 425, 0.5, TX_GRAY, RGB(0,127,157), 0, -1);
  \endcode
 */
 void DrawPlane(int x, int y, double scale, COLORREF color, COLORREF dcolor, double plami, double zerkalo); //самолёт
@@ -55,7 +55,7 @@ void DrawPlane(int x, int y, double scale, COLORREF color, COLORREF dcolor, doub
  \param   color   цвет подводной лодки
  \param   vint    винт уменьшается от 0 до 45
  \param   antena  антена уменьшается от 0 до -75
- \param   zerkalo (-1) - самолёт смотрит влево,    1 - вправо
+ \param   zerkalo (-1) - подводная лодка смотрит влево,    1 - вправо
  \warning цвет антен ВСЕГДА чёрный!!!
 
  \code
@@ -72,7 +72,7 @@ void DrawSubmarine(int x, int y, double scale, COLORREF color, double vint, doub
  \param   scale   размер
  \param   color   цвет основания корабля
  \param   dcolor  цвет рубки корабля
- \param   turel   турель убирается от 0 до 45 (если zerkalo = 1) / убирается от 0 до -45 (если zerkalo = -1)
+ \param   turel   турель убирается от 0 до 45
  \param   gun     пушка опускается от 0 до 20
  \param   dead    1 - пробоина есть, 0 - пробоины нет
  \param   radar   1 - радар сломанный, 0 - радар целый
@@ -88,7 +88,7 @@ void DrawShip(int x, int y, double scale, COLORREF color, COLORREF dcolor, doubl
 //{=========РАКЕТА=====================================================================================================================================================================================
 
 /**
- \brief   рисует корабль
+ \brief   рисует ракету
  \param   x, y    координаты
  \param   scale   размер
  \param   color   цвет ракеты
@@ -139,7 +139,7 @@ void DrawHelicopter(int x, int y, double scale, COLORREF color, COLORREF dcolor,
                            {int(x-25*xscale), y}, {int(x+25*xscale), y}, {int(x+125*xscale), int(y+100*scale)},
                            {int(x-75*xscale), int(y+100*scale)}, {int(x-175*xscale), int(y+75*scale)}};
     txPolygon (helicopter, 9);
-    txLine(x-100*xscale-lopasti*scale, y-25*scale, x+100*xscale+lopasti*scale, y-25*scale); //лопасть
+    txLine(x-100*xscale-lopasti*xscale, y-25*scale, x+100*xscale+lopasti*xscale, y-25*scale); //лопасть
     txLine(x, y, x, y-25*scale);
     txSetFillColor(dcolor);
     POINT cabin[4] = {{int(x+75*xscale), int(y+50*scale)},
@@ -153,7 +153,7 @@ void DrawPlane(int x, int y, double scale, COLORREF color, COLORREF dcolor, doub
     double xscale = scale * zerkalo;
     txSetColor(RGB(57,8,200), 5*scale);
     txSetFillColor(RGB(170,8,200));
-    POINT plamia [3] = {{int(x-100*xscale), int(y-15*scale)}, {int(x-325*xscale+plami*scale), int(y-10*scale)}, {int(x-175*xscale), y}}; //движок
+    POINT plamia [3] = {{int(x-100*xscale), int(y-15*scale)}, {int(x-325*xscale+plami*xscale), int(y-10*scale)}, {int(x-175*xscale), y}}; //движок
     txPolygon (plamia, 3);
     txSetFillColor(color); //самолет
     txSetColor(TX_BLACK, 5*scale);
@@ -192,11 +192,11 @@ void DrawShip(int x, int y, double scale, COLORREF color, COLORREF dcolor, doubl
     double yscale = scale * zerkalo;
     txSetFillColor(dcolor);
     txSetColor(TX_BLACK, 5*scale);
-    POINT gan[4] = {{int(x-200*scale), int(y+217*yscale+turel*scale)}, {int(x-180*scale), int(y+175*yscale+turel*scale)}, // пушка
-                    {int(x-145*scale), int(y+180*yscale+turel*scale)}, {int(x-140*scale), int(y+225*yscale+turel*scale)}};
+    POINT gan[4] = {{int(x-200*scale), int(y+217*yscale+turel*yscale)}, {int(x-180*scale), int(y+175*yscale+turel*yscale)}, // пушка
+                    {int(x-145*scale), int(y+180*yscale+turel*yscale)}, {int(x-140*scale), int(y+225*yscale+turel*yscale)}};
     txPolygon (gan, 4);
     txSetColor(TX_BLACK, 6*scale);
-    txLine(x-190*scale, y+195*yscale+turel*scale, x-225*scale, y+175*yscale+(gun+turel)*scale); //ствол
+    txLine(x-190*scale, y+195*yscale+turel*yscale, x-225*scale, y+175*yscale+(gun+turel)*yscale); //ствол
     txSetColor(TX_BLACK, 5*scale); //корабль
     txSetFillColor(color);
     POINT ship[7] = {{int(x-300*scale), int(y+205*yscale)}, {int(x-100*scale), int(y+230*yscale)},
@@ -235,10 +235,6 @@ void DrawShip(int x, int y, double scale, COLORREF color, COLORREF dcolor, doubl
                              {int(x-100*scale), int(y+325*yscale)}};
         txPolygon (probitie, 9);
     }
-    else
-    {
-        ;
-    }
 }
 void DrawMissle(int x, int y, double scale, COLORREF color, int fire, double krillo, double feri, double zerkalo) //215, 670
 {
@@ -259,17 +255,11 @@ void DrawMissle(int x, int y, double scale, COLORREF color, int fire, double kri
         txSetColor(TX_ORANGE, 1*scale);
         txSetFillColor(TX_ORANGE);
         POINT ogon[5] = {{int(x-115*xscale), int(y-3*scale)}, {int(x-135*xscale), int(y-5*scale)},
-                         {int(x-165*xscale-feri*scale), y},{int(x-135*xscale), int(y+7*scale)},
+                         {int(x-165*xscale-feri*xscale), y},{int(x-135*xscale), int(y+7*scale)},
                          {int(x-115*xscale), int(y+4*scale)}};
         txPolygon (ogon, 5);
     }
-    else
-    {
-        ;
-    }
-
  }
-
 void draw_more(int x, int y, double scale, COLORREF color, COLORREF dcolor, int e)//0, 350
 {
         for(int i=0; i<e; i++)
@@ -292,5 +282,4 @@ void draw_more(int x, int y, double scale, COLORREF color, COLORREF dcolor, int 
             txLine((x+50)*scale, (y+275)*scale, (x+100)*scale, (y+275)*scale);
             x=x+200;
         }
-        return;
 }
