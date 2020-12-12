@@ -8,6 +8,7 @@
     \param  turn -  параметр поворота по горизонтальной оси.
     \param  mirror - параметр отражения по горизонтальной оси.
     \param  border - параметр поворота по вертикальной оси.
+    DrawHome(700,700,1, TX_GREEN, 1, 1, 1); пример использования.
 */
 void DrawHome(int x, int y, double scale, COLORREF color, int turn, int mirror, int border );
 
@@ -19,6 +20,7 @@ void DrawHome(int x, int y, double scale, COLORREF color, int turn, int mirror, 
     \param turn -  параметр поворота по горизонтальной оси.
     \param  mirror - параметр отражения по горизонтальной оси.
     \param  border - параметр поворота по вертикальной оси.
+    DrawMan(1000,200,1, TX_WHITE, 0, 1, 1); пример использвания.
 */
 void DrawMan(int x, int y, double scale, COLORREF color, int turn, int mirror, int border);
     /**
@@ -29,6 +31,7 @@ void DrawMan(int x, int y, double scale, COLORREF color, int turn, int mirror, i
     \param turn -  параметр поворота по горизонтальной оси.
     \param  mirror - параметр отражения по горизонтальной оси.
     \param  border - параметр поворота по вертикальной оси.
+    DrawBag(100,300,1, TX_GREEN, 0, 1, 0); пример использования.
 */
 void DrawBag(int x, int y, double scale, COLORREF color, int turn, int mirror, int border);
     /**
@@ -39,6 +42,7 @@ void DrawBag(int x, int y, double scale, COLORREF color, int turn, int mirror, i
     \param turn -  параметр поворота по горизонтальной оси.
     \param  mirror - параметр отражения по горизонтальной оси.
     \param  border - параметр поворота по вертикальной оси.
+    DrawCircle(500,600,1, TX_GREEN, 0, 1, 1); пример использования.
     */
 void DrawCircle(int x,int y, double scale, COLORREF color, int turn, int mirror, int border);
     /**
@@ -49,11 +53,12 @@ void DrawCircle(int x,int y, double scale, COLORREF color, int turn, int mirror,
     \param turn -  параметр поворота по горизонтальной оси.
     \param  mirror - параметр отражения по горизонтальной оси.
     \param  border - параметр поворота по вертикальной оси.
+    DrawCar(700,200,1, TX_GREEN, 1, 0, 1); пример использования.
     */
 void DrawCar(int x,int y, double scale, COLORREF color, int turn, int mirror, int border );
 
-        DrawCar(900, 600, 1, TX_RED, 1, 0, 1);
-    }
+
+
 void DrawHome(int x,int y, double scale, COLORREF color, int turn, int mirror,  int border )
 {
      //домик
