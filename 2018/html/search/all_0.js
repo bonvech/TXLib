@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ashurkovalib_2eh_0',['AshurkovaLib.h',['../_ashurkova_lib_8h.html',1,'']]]
+  ['ashurkovalib_2eh',['ashurkovaLib.h',['../ashurkova_lib_8h.html',1,'']]]
 ];
