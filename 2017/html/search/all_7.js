@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['znamenkalib_2eh',['ZnamenkaLib.h',['../_znamenka_lib_8h.html',1,'']]]
+  ['znamenkalib_2eh',['znamenkaLib.h',['../znamenka_lib_8h.html',1,'']]]
 ];

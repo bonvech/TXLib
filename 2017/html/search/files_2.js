@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['konstantininshakovlib_2eh',['KonstantinInshakovLib.h',['../_konstantin_inshakov_lib_8h.html',1,'']]]
+  ['kolialib_2eh',['koliaLib.h',['../kolia_lib_8h.html',1,'']]],
+  ['konstantininshakovlib_2eh',['konstantinInshakovLib.h',['../konstantin_inshakov_lib_8h.html',1,'']]]
 ];
