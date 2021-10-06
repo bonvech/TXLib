@@ -1,1 +1,1 @@
-# TXLib based creatures of school students.
+# TXLib based creatures of 8-grade students of the school 192.
